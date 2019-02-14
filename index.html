@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="./logo.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<title>Fernando Greco</title>
+<style>
+  *{
+    margin:0;
+    padding: 0;
+  }
+
+  .links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+  }
+
+  .btn{
+    background-color: #088A08;
+  }
+
+  .links label {
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 100%;
+    color: #fff;
+  }
+
+  .links label:hover{
+    background-color: rgba(255,255,255,.2);
+  }
+
+ 
+  .bloco {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  #inicio{
+
+    background-color: black;
+  }
+
+  #ruby{
+    background-color: green;
+  }
+
+  #bootstrap{
+    background-color: #0B3B0B;
+  }
+
+  #sass {
+    background-color: #B40404;
+  }
+
+  .scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }   
+
+  .scroll input{
+    display: none;
+  }
+
+  .sections{
+    transition: all .4s;
+  }
+
+  #rd_bootstrap:checked ~ .sections{
+    margin-top: -100vh;
+  }
+
+  #rd_sass:checked ~ .sections{
+    margin-top: -200vh;
+  }
+
+  #rd_ruby:checked ~ .sections{
+    margin-top: -300vh;
+  }
+
+.rosto{
+  position: relative;
+top: 50%;
+transform: translateY(-50%); 
+  width:150px;
+  z-index: 4!important;
+   border-radius: 50%; 
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}  
+
+
+.row.fundoSore{
+  height: 270px;
+  background-color: #0B3B0B;
+  width: 100%;
+  z-index: 1;
+  border-radius: 10px;
+    border-style: solid;
+  border-color: #088A08;
+   border-bottom-width: 0;
+  border-top-width: medium;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.row.fundoSoreCuros{
+  height: 270px;
+  background-color: #0B3B0B;
+  width: 100%;
+  z-index: 1;
+  border-radius: 10px;
+    border-style: solid;
+  border-color: #088A08;
+   border-bottom-width: medium;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.descricao{
+  padding: 10px;
+  color: black; 
+  margin-top: 5%;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 2;
+  background-color: white;
+
+}
+ 
+ .textoSobre{
+  color: white;
+  font-family: verdana;
+  margin: 20px;
+  font-size: 20px;
+ 
+
+ }
+
+
+ .txtBotao{
+  font-size: 25px;
+  color: white;
+  margin: 20px;
+ }
+
+
+ .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0px 20px 20px 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<nav class="links">
+  <label for="rd_inicio">Início</label>
+  <label for="rd_bootstrap"> Sobre</label>
+  <label for="rd_sass">Projetos</label>
+  <label for="rd_ruby">Contato</label>
+  
+</nav>
+
+
+
+<div class="scroll">
+  <input type="radio" name="grupo" id="rd_inicio" checked="true">
+  <input type="radio" name="grupo" id="rd_bootstrap">
+  <input type="radio" name="grupo" id="rd_sass">
+  <input type="radio" name="grupo" id="rd_ruby">
+
+
+  <section class="sections">
+  <section class="bloco" id="inicio">
+   <div id="log" class="descricao"></div>
+  </section>
+  <section class="bloco" id="bootstrap">
+
+
+    <div class="container">
+
+  <div class="row fundoSore">
+    <div class="col-2">
+      <img src="img/rosto2.jpg" class="rosto" />
+       <p style="color: white; position: absolute; margin: 55px 0px 0px 15px;">Fernando Greco</p>
+    </div>
+    <div class="col-10" align="center">
+ <p class="textoSobre">     
+ Trabalho a 12 anos com Design Gráfico. Nos últimos 5 anos estudando e realizando serviços de Desenvolvimento Web. Seja na área de Dev ou Design; simples e funcional. Se for muito complexo; divido em partes menores e vou fazendo o que é mais importante; resolver problemas e trazer resultados. Gosto de estar estudando (Fundação Bradesco, Udemy, Veduca, TED...); participo de grupos em redes sociais para trocar conhecimento e estar "antenado".
+</p>
+<p style="font-size: 18px; color:black; background-color: white; margin: 20px;">Formação: Bacharelado em Sistemas de Informação 
+[FMU] 2014 / 2017.</p>
+    </div>
+   
+  </div>
+
+  <div class="row fundoSoreCuros" align="center">
+    <div class="col-3">
+  <p class="txtBotao">  Cursos </p>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal1">
+  <img src="https://img.icons8.com/material/124/000000/school.png">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Cursos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<b>Fundação Bradesco</b>
+
+* HTML - CSS<br>
+
+* Processo de Desenvolvimento de Software <br>
+
+* Desenvolvimento Android Studio Intermediário - (Udemy)<br>
+
+* Desenvolvimento WEB FullStack (PHP, Mysql e JavaScript) - (Udemy)
+
+* PVG (Produção Visual Gráfica)<br>
+
+* Photoshop, Illustrator, In Design, Adobe Animate<br>
+
+* Fundamentos de Governança de TI 2016<br>
+
+* Lógica de Programação – (37 horas) - 2015 <br>
+
+* Gestão Estratégica de TI – ITIL - 2016 <br>
+
+* Contabilidade Empresarial - (27 horas) - 2014 <br>
+
+* Análise de Balanços - (30 horas) - 2014 <br>
+
+
+* Atualmente estudando Angular 2/TypeScript.<br>
+
+Linguagens: C, PHP, CSS (Layout Responsivo, GridSystem, Framework: Bootstrap, Materialize), Mysql, JavaScript, Java (básico: Android Studio, NetBeans), XML, Json, AJAX.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+   
+
+    <div class="col-3">
+      <p class="txtBotao">Currículo</p>
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal5">
+ 
+      
+  <img src="https://img.icons8.com/material/124/000000/submit-resume.png">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Currículo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<b>Fernando Greco</b>
+<hr>
+Brasileiro, solteiro, 29 anos<br> Rua José Antonio Augusto, <br>8A Pestana – Osasco – SP <br>Telefone: (11) 3695-1078 Cel.: 97145-7988 <br> E-mail: greco-fernando@hotmail.com
+<br><hr>
+<b>OBJETIVO</b><br>
+<b>Desenvolvimento Web - FullStack [Junior]</b>
+<br><br><hr>
+<b>FORMAÇÃO</b>
+
+<b>Graduação em Sistemas de Informação<br>
+
+Instituição: FMU (Faculdades Metropolitanas Unidas).</b>
+<br>
+Início: 01/02/2014 | Término: 20/12/2017.
+<hr>
+<br>
+
+Portifólio: https://fernandogreco.github.io/index.html <br>
+<br><hr>
+<b>Projetos Recentes:</b><br>
+
+http://jornalfolhaoeste.com.br/<br>
+
+Detalhes: Sem framework; CSS, PHP e Mysql. Usuário inclui, exclui matéria, cria edição (cria pasta e salva imagens da edição), faz busca por título. Desenvolvido utilizando padrão MVC (Model, View e Controler).<br>
+
+http://sticcor.com.br/<br>
+
+Detalhes: Sem framework, CSS, PHP e Mysql. Usuário inclui, exclui notícia.<br>
+<hr>
+<b>Idiomas: Inglês Intermediário</b>
+<br>
+<b>EXPERIÊNCIA PROFISSIONAL</b>
+
+* 2009 - Atualmente – Jornal Folha Oeste<br>
+
+Cargo: Diagramador.<br>
+
+<b>Atividade desempenhada:</b> Design Gráfico e Desenvolvimento Web, montei o sit com PHP, MySQL e JavaScript. O sistema possui painel administrativo, com login e senha, buscador, inserção/exclusão de notícia/edição. Tudo que é criado é salvo no banco de dados (mysql), o que permite trabalhar os dados futuramente.<br><br>
+
+<b>Considerações finais:</b> Venho estudando Dev. Web a 5 anos, últimos 4 anos estava mais focado na faculdade. Este ano estou focado em entrar no mercado de trabalho e ganhar experiência trabalhando no que eu gosto de fazer.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fexar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+     <div class="col-3">
+      <p class="txtBotao">Videos</p>
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal6">
+ 
+      <img src="https://img.icons8.com/material/124/000000/youtube.png">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Tutorials</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="300px"  src="https://www.youtube.com/embed/a6rPU3VvUqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+  <div class="col-3">
+      <p class="txtBotao">Enade</p>
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal7">
+ 
+      <img src="https://img.icons8.com/material/124/000000/test-passed.png">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel4">Resultado Prova Enade</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="300px"  src="https://www.youtube.com/embed/a6rPU3VvUqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+    
+  </section>
+  <section class="bloco" id="sass">
+<div class="flex-container">
+  <div><img src="img/folhaOeste.jpg" width="100%"></div>
+  <div><img src="img/folhaOeste.jpg" width="100%"></div>
+</div>
+  </section>
+  <section class="bloco" id="ruby"></section>
+  
+</section>
+</div>
+
+<script type="text/javascript" src="myscripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
