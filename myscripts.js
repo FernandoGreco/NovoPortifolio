@@ -29,6 +29,7 @@ function limpar(done) {
     }, 25);
 }
 
+
 function rodape(conteudos, el) {
     var atual = -1;
     var cont = 0;
