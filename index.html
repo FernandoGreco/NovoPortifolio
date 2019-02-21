@@ -188,7 +188,7 @@ transform: translateY(-50%);
 
 
 .imgProjetos:hover{
-box-shadow: 9px 5px 13px white;
+box-shadow: 9px 5px 7px gray;
 -webkit-transition: 0.3s ease-in;
 -moz-transition: 0.3s ease-in;
 -o-transition: 0.3s ease-in;
@@ -222,6 +222,11 @@ box-shadow: 9px 5px 13px white;
   opacity: 1;
   animation: pisca .7s infinite;
  }
+
+
+.modal-body, .modal-title{
+  color: black;
+}
 
  @keyframes pisca {
   0%, 100%{
@@ -518,14 +523,41 @@ Cargo: Diagramador.<br>
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel0">Tutorials</h5>
+        <h5 class="modal-title" id="exampleModalLabel0">Jornal Folha Oeste <br>
+        <a href="http://jornalfolhaoeste.com.br/index.php" target="_blank"> www.jornalfolhaoeste.com.br</a>
+        </h5>
+
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       <h3>Virtual Voice</h3><hr  style="border-color: gray;">
-      <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
+      <b> Tecnologias Utilizadas: </b> PHP (Arquitetura MVC), Mysql (PDO), CSS e JavaScript (Ajax)<br><hr>
+      <img src="img/folhaOeste.jpg" width="100%" class="imgProjetos"><br><hr>
+      <b> Login: </b> Usuario e senha para acessar painel de adm, usa sesion do PHP<br><hr>
+      <img src="img/login.jpg" width="100%" class="imgProjetos"><br><hr>
+      <b> Painel: </b> Adiciona um título, texto, foto e para qual local irá a matéria<br><hr>
+      <img src="img/painel.jpg" width="100%" class="imgProjetos"><br><hr>
+
+      <b> Deleta Matéria: </b> Digita o ID da matéria a ser deletada<br><hr>
+      <img src="img/delMateria.jpg" width="100%" class="imgProjetos"><br><hr>
+
+
+      <b> Cria Edição: </b> Cria uma pasta com o número da edição e salva todas as fotos (Jornal Completo) dentro dessa pasta. Têm a opção deletar edição (Canto inferior esquerdo).<br><hr>
+      <img src="img/criaEdicao.jpg" width="100%" class="imgProjetos"><br><hr>
+
+      <b> Exibe Edições: </b> Apresenta capa das edições cadastradas, ao clicar nela exibe o Jornal completo<br><hr>
+      <img src="img/edicoes.jpg" width="100%" class="imgProjetos"><br><hr>
+
+      <b> Mais notícias: </b> Ao chegar ao final da página, aparece um botão mais notícias, ao clicar nele carrega novas notícias através de requisição assíncrona através do AJAX<br><hr>
+
+
+      <b> Aplicativo: </b> Um WebView feito no AndroidStudio<br><hr>
+      <img src="img/maisNoticias.jpg" width="100%" class="imgProjetos"><br><hr>
+
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -543,8 +575,8 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal10">
  
-      <h3>Virtual Voice</h3> <hr style="border-color: gray;">  
-      <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
+      <h3>Engenheiro Diego</h3> <hr style="border-color: gray;">  
+      <img src="img/engDiego.jpg" width="100%" class="imgProjetos">
 </button>
 
 <!-- Modal -->
@@ -603,12 +635,46 @@ Cargo: Diagramador.<br>
 </center>
 
     </div>
-    <div class="col-4">
+    
+     <div class="col-4">
+<br>
+      <!-- Button trigger modal -->
+<button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal10">
+ 
+      <h3>Virtual Voice</h3> <hr style="border-color: gray;">  
+      <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel0" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel0">Tutorials</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Virtual Voice</h3><hr  style="border-color: gray;">
+      <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+      
+    </div>
+
+        <div class="col-4">
+
+<br>
  <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal11">
- <br>
+ 
            <h3>STICCOR</h3><hr  style="border-color: gray;">
             <img src="img/sticcor.jpg" width="100%" class="imgProjetos">
        
@@ -639,6 +705,7 @@ Cargo: Diagramador.<br>
   
 
     </div>
+
     <div class="col-4">
 
 
@@ -670,43 +737,6 @@ Cargo: Diagramador.<br>
     </div>
   </div>
 </div>
-
-     
-    </div>
-    <div class="col-4">
-
-
-
-      <!-- Button trigger modal -->
-<button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal13">
- <br>
-           <h3>Layouts</h3><hr style="border-color: gray;">
-      <img src="img/carro.jpg" width="100%" class="imgProjetos">
-       
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel13" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel13">Tutorials</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <h3>Layouts</h3><hr  style="border-color: gray;">
-      <img src="img/carro.jpg" width="100%" class="imgProjetos">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
      
     </div>
