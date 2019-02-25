@@ -109,29 +109,31 @@ transform: translateY(-50%);
 .row.fundoSore{
   height: 270px;
   background-color: gray;
-  width: 100%;
+  width: 93%;
   z-index: 1;
   border-radius: 10px;
     border-style: solid;
-  border-color: black;
+  border-color: #6E6E6E;
    border-bottom-width: 0;
   border-top-width: medium;
   border-right-width: 0;
   border-left-width: 0;
+  margin-left: 3%;
 }
 
 .row.fundoSoreCuros{
   height: 270px;
   background-color: gray;
-  width: 100%;
+  width: 93%;
   z-index: 1;
   border-radius: 10px;
     border-style: solid;
-  border-color: black;
+  border-color: #6E6E6E;
    border-bottom-width: medium;
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
+  margin-left: 3%;
 }
 
 .descricao{
@@ -142,7 +144,6 @@ transform: translateY(-50%);
   font-size: 30px;
   font-weight: 2;
   background-color: white;
-
 }
  
  .textoSobre{
@@ -150,9 +151,7 @@ transform: translateY(-50%);
   font-family: verdana;
   margin: 20px;
   font-size: 20px;
- 
-
- }
+  }
 
 
  .txtBotao{
@@ -176,9 +175,6 @@ transform: translateY(-50%);
   line-height: 75px;
   font-size: 30px;
 }
-
-
-
 
 .imgProjetos:hover{
 box-shadow: 9px 5px 7px gray;
@@ -205,9 +201,6 @@ box-shadow: 9px 5px 7px gray;
 
 }
 
-
-
-
 .descricao::after{
   color: black;
   content: '|';
@@ -216,11 +209,22 @@ box-shadow: 9px 5px 7px gray;
   animation: pisca .7s infinite;
  }
 
+ .nome{
+  color: white; position: absolute; margin: 55px 0px 0px 15px;
+ }
+
 
 .modal-body, .modal-title{
   color: black;
 }
 
+.iconeSobre{
+  display: none;
+}
+
+.formacao{
+ font-size: 18px; color:black; background-color: white; margin: 20px;
+}
  @keyframes pisca {
   0%, 100%{
     opacity: 1;
@@ -230,27 +234,21 @@ box-shadow: 9px 5px 7px gray;
   }
  }
 
+@media only screen and (max-width: 1200px){
 
-@media only screen and (max-width: 600px) {
-
- 
-.descricao{
-max-width: 90%;
-font-size: 20px;
-}
-
+   .nome{
+ margin: 75px 0px 0px 15px;
+ }
 
 }
-
-
 @media only screen and (max-width: 1000px) {
 
  .textoSobre{
   font-size: 15px;
 }
 
-.row.fundoSore{
-  border-top-width: 0;
+.row.fundoSore,.row.fundoSoreCuros{
+  border: 0;
 
 }
 
@@ -263,7 +261,67 @@ transform: translateY(-40%);
 }  
 
 
+.some{
+  display: none;
 }
+
+   .nome{
+ margin: 22px 0px 0px 15px;
+ }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.textoSobre{
+  display: none;
+}
+
+.formacao{
+ font-size: 14px;  margin-left:  15%;
+ width: 250px;
+}
+
+.iconeSobre{
+  display: inherit;
+  margin: 20px 0px 0px 60px;
+  width: 150px;
+}
+
+.nome{
+  width: 150px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+.descricao{
+max-width: 90%;
+font-size: 20px;
+}
+
+
+.rosto{
+  width: 120px;
+  top: 20%;
+
+}
+
+
+.formacao{
+ font-size: 14px;   margin-top: 100px; position: absolute;
+ width: 100%;
+}
+
+}
+
+
 
 </style>
 </head>
@@ -292,18 +350,46 @@ transform: translateY(-40%);
   <section class="bloco" id="bootstrap">
 
 
-    <div class="container">
+    <div class="container-fluid">
 
   <div class="row fundoSore">
     <div class="col-2">
       <img src="img/rosto2.jpg" class="rosto" />
-       <p style="color: white; position: absolute; margin: 55px 0px 0px 15px;">Fernando Greco</p>
+       <p class="nome">Fernando Greco</p>
     </div>
     <div class="col-10" align="center">
+    <div class="iconeSobre">
+<h3>Sobre</h3>
+<svg data-toggle="modal" data-target="#exampleModal" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/>    Sobre<path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sobre</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Trabalho a 12 anos com Design Gráfico. Nos últimos 5 anos estudando e realizando serviços de Desenvolvimento Web. Seja na área de Dev ou Design; simples e funcional. Se for muito complexo; divido em partes menores e vou fazendo o que é mais importante; resolver problemas e trazer resultados. Gosto de estar estudando (Fundação Bradesco, Udemy, Veduca, TED...); participo de grupos em redes sociais para trocar conhecimento e estar "antenado".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fexar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
  <p class="textoSobre">     
  Trabalho a 12 anos com Design Gráfico. Nos últimos 5 anos estudando e realizando serviços de Desenvolvimento Web. Seja na área de Dev ou Design; simples e funcional. Se for muito complexo; divido em partes menores e vou fazendo o que é mais importante; resolver problemas e trazer resultados. Gosto de estar estudando (Fundação Bradesco, Udemy, Veduca, TED...); participo de grupos em redes sociais para trocar conhecimento e estar "antenado".
 </p>
-<p style="font-size: 18px; color:black; background-color: white; margin: 20px;">Formação: Bacharelado em Sistemas de Informação 
+<p class="formacao">Formação: Bacharelado em Sistemas de Informação 
 [FMU] 2014 / 2017.</p>
     </div>
    
@@ -483,7 +569,7 @@ Cargo: Diagramador.<br>
 
 
   <div class="col-3">
-      <p class="txtBotao">Histórico / Enade</p>
+      <p class="txtBotao">Histórico </p>
 
 
 
