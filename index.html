@@ -10,30 +10,24 @@
     margin:0;
     padding: 0;
   }
-
   .links{
     width: 100%;
     height: 50px;
     position: fixed;
     display: flex;
   }
-
   .btn{
     background-color: #A4A4A4;
   }
-
  .btnProjetos{
     background-color: black;
     color: white;
     text-align: left;
     border:none;
   }
-
   .btn:hover{
     background-color: #D8D8D8;
   }
-
-
   .links label {
     padding: 10px 0;
     flex-grow: 1;
@@ -44,11 +38,9 @@
     font-size: 100%;
     color: #fff;
   }
-
   .links label:hover{
     background-color: rgba(255,255,255,.2);
   }
-
  
   .bloco {
     width: 100vw;
@@ -57,44 +49,33 @@
     align-items: center;
     display: flex;
   }
-
   #inicio,  #sass{
-
     background-color: black;
   }
-
   #ruby, #bootstrap{
     background-color: gray;
   }
-
-
   .scroll{
     display: flex;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
   }   
-
   .scroll input{
     display: none;
   }
-
   .sections{
     transition: all .4s;
   }
-
   #rd_bootstrap:checked ~ .sections{
     margin-top: -100vh;
   }
-
   #rd_sass:checked ~ .sections{
     margin-top: -200vh;
   }
-
   #rd_ruby:checked ~ .sections{
     margin-top: -300vh;
   }
-
 .rosto{
   position: relative;
 top: 50%;
@@ -104,8 +85,6 @@ transform: translateY(-50%);
    border-radius: 50%; 
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }  
-
-
 .row.fundoSore{
   height: 270px;
   background-color: gray;
@@ -120,7 +99,6 @@ transform: translateY(-50%);
   border-left-width: 0;
   margin-left: 3%;
 }
-
 .row.fundoSoreCuros{
   height: 270px;
   background-color: gray;
@@ -135,7 +113,6 @@ transform: translateY(-50%);
   border-left-width: 0;
   margin-left: 3%;
 }
-
 .descricao{
   padding: 10px;
   color: black; 
@@ -150,23 +127,25 @@ transform: translateY(-50%);
   color: white;
   font-family: verdana;
   margin: 20px;
-  font-size: 20px;
+  font-size: 17px;
   }
+  .projetosMenor{
+    margin-top: 10px;
+    color: black;
 
-
+    width: 100%;
+    display: none;
+  }
  .txtBotao{
   font-size: 25px;
   color: white;
   margin: 20px;
  }
-
-
  .flex-container {
   display: flex;
   flex-wrap: nowrap;
   background-color: DodgerBlue;
 }
-
 .flex-container > div {
   background-color: #f1f1f1;
   width: 100%;
@@ -175,32 +154,23 @@ transform: translateY(-50%);
   line-height: 75px;
   font-size: 30px;
 }
-
 .imgProjetos:hover{
 box-shadow: 9px 5px 7px gray;
 -webkit-transition: 0.3s ease-in;
 -moz-transition: 0.3s ease-in;
 -o-transition: 0.3s ease-in;
-
-
 -moz-transform: scale(1.01); 
   -webkit-transform: scale(1.01); 
   transform: scale(1.01); 
-
 }
-
 .imgProjetosGit:hover{
 -webkit-transition: 2s ease-in;
 -moz-transition: 2s ease-in;
 -o-transition: 2s ease-in;
-
-
 -moz-transform: scale(1.2); 
   -webkit-transform: scale(1.2); 
   transform: scale(1.2); 
-
 }
-
 .descricao::after{
   color: black;
   content: '|';
@@ -208,24 +178,18 @@ box-shadow: 9px 5px 7px gray;
   opacity: 1;
   animation: pisca .7s infinite;
  }
-
  .nome{
   color: white; position: absolute; margin: 55px 0px 0px 15px;
  }
-
-
 .modal-body, .modal-title{
   color: black;
 }
-
 .iconeSobre{
   display: none;
 }
-
 .formacao{
- font-size: 18px; color:black; background-color: white; margin: 20px;
+ font-size: 18px; color:black; background-color: white; margin: 20px; padding: 7px;
 }
-
 .formacaoMenor{
 display: none;
 }
@@ -237,121 +201,103 @@ display: none;
     opacity: 0;
   }
  }
-
 @media only screen and (max-width: 1200px){
-
    .nome{
  margin: 75px 0px 0px 15px;
  }
-
 }
 @media only screen and (max-width: 1000px) {
-
  .textoSobre{
   font-size: 15px;
 }
-
 .row.fundoSore,.row.fundoSoreCuros{
   border: 0;
-
 }
-
-
 .rosto{
-
 top: 30%;
 transform: translateY(-40%); 
  
 }  
 
-
-.some{
-  display: none;
-}
-
    .nome{
  margin: 22px 0px 0px 15px;
  }
 
-
-}
-
-
-@media only screen and (max-width: 800px) {
-
-.textoSobre{
+  .someEm1000{
   display: none;
 }
 
+  .projetosMenor{
+    display: inherit;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+
+
+  .some{
+  display: none;
+}
+.tituloProjetos{
+  font-size: 18px;
+  margin-top: 10px;
+}  
+.textoSobre{
+  display: none;
+}
 .formacao{
  font-size: 14px;  margin-left:  15%;
  width: 250px;
 }
-
 .iconeSobre{
   display: inherit;
   margin: 20px 0px 0px 60px;
   width: 150px;
 }
-
 .nome{
   width: 150px;
 }
-
 }
-
-
 @media only screen and (max-width: 600px) {
-
   .nome{
  margin: 10px 0px 0px 15px;
  }
-
 .descricao{
 max-width: 90%;
 font-size: 20px;
 }
-
-
 .rosto{
   width: 120px;
   top: 20%;
-
 }
-
-
 .formacao{
 display: none;
 }
-
 .formacaoMenor{
 display: inherit;
 position: absolute;
 margin-top: 40%;
 background-color: white;
 width: 90%;
+padding: 5px;
+text-align: center;
+font-size: 12px;
 }
-
 .txtBotao{
   display: none;
 }
-
 .btn.sobre{
   margin-bottom: 10px;
 }
-
 }
-
 @media only screen and (max-width: 400px) {
-
 .formacaoMenor{
-margin-top: 55%;
-
+margin-top: 53%;
 }
-
+.btn.sobre{
+  padding: 5px;
 }
-
-
+}
 </style>
 </head>
 <body>
@@ -650,12 +596,12 @@ Cargo: Diagramador.<br>
 <div class="container">
 
   <div class="row" style="color: white;">
-    <div class="col-4">
+    <div class="col-12 col-sm-6 col-lg-4">
 
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal10">
  
-      <h3>Jornal Folha Oeste</h3> <hr style="border-color: gray;">  
+      <h3 class="tituloProjetos">Jornal Folha Oeste</h3> <hr style="border-color: gray;">  
       <img src="img/folhaOeste.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -711,12 +657,12 @@ Cargo: Diagramador.<br>
     </div>
 
 
-     <div class="col-4">
+     <div class="col-12 col-sm-6 col-lg-4">
 
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal19">
  
-      <h3>Engenheiro Diego</h3> <hr style="border-color: gray;">  
+      <h3 class="tituloProjetos">Engenheiro Diego</h3> <hr style="border-color: gray;">  
       <img src="img/engDiego.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -746,9 +692,9 @@ Cargo: Diagramador.<br>
       
     </div>
 
-    <div class="col-4">
+    <div class="col-12 col-sm-6 col-lg-4 some">
       
-<h3>GitHub</h3><hr  style="border-color: gray;">
+<h3 class="tituloProjetos">GitHub</h3><hr  style="border-color: gray;">
      <center><a href="https://github.com/FernandoGreco" target="_blank"> <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    x="0px" y="0px" viewBox="0 0 531 552" xml:space="preserve" width="50%" class="imgProjetosGit">
 <g>
@@ -779,12 +725,12 @@ Cargo: Diagramador.<br>
 
     </div>
     
-     <div class="col-4">
+     <div class="col-12 col-sm-6 col-lg-4 some">
 <br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal20">
  
-      <h3>Virtual Voice</h3> <hr style="border-color: gray;">  
+      <h3 class="tituloProjetos">Virtual Voice</h3> <hr style="border-color: gray;">  
       <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -825,13 +771,13 @@ Cargo: Diagramador.<br>
       
     </div>
 
-        <div class="col-4">
+        <div class="col-12 col-sm-6 col-lg-4 someEm1000">
 
 <br>
  <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal11">
  
-           <h3>STICCOR</h3><hr  style="border-color: gray;">
+           <h3 class="tituloProjetos">STICCOR</h3><hr  style="border-color: gray;">
             <img src="img/sticcor.jpg" width="100%" class="imgProjetos">
        
 </button>
@@ -868,13 +814,13 @@ Cargo: Diagramador.<br>
 
     </div>
 
-    <div class="col-4">
+    <div class="col-12 col-sm-6 col-lg-4 someEm1000">
 
 
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal12">
  <br>
-           <h3>Single Page (Angular 2+)</h3><hr  style="border-color: gray;">
+           <h3 class="tituloProjetos">Single Page (Angular 2+)</h3><hr  style="border-color: gray;">
       <img src="img/layout.jpg" width="100%" class="imgProjetos">
        
 </button>
@@ -905,6 +851,106 @@ Cargo: Diagramador.<br>
 
      
     </div>
+
+    <div class="col-12">
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary projetosMenor" data-toggle="modal" data-target="#exampleModal21">
+  <h3> <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path  fill="gray" d="M0 0h24v24H0V0z"/><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
++ Projetos</h3>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel21" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel21">Projetos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+
+    <a href="https://github.com/FernandoGreco" target="_blank">    <h5 class="tituloProjetos">GitHub</h5><hr  style="border-color: gray;">
+     <center> <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   x="0px" y="0px" viewBox="0 0 531 552" xml:space="preserve" width="100px" class="imgProjetosGit">
+<g>
+  <path fill-rule="evenodd" fill="black" d="M263.7,33.5c-137.4,0-248.8,111.4-248.8,248.8c0,109.9,71.3,203.2,170.2,236.1
+    c12.4,2.3,17-5.4,17-12c0-5.9-0.2-25.5-0.3-46.3c-69.2,15.1-83.8-29.4-83.8-29.4c-11.3-28.8-27.6-36.4-27.6-36.4
+    C67.7,379,92,379.3,92,379.3c25,1.8,38.1,25.6,38.1,25.6c22.2,38,58.2,27,72.4,20.7c2.2-16.1,8.7-27.1,15.8-33.3
+    C163.1,386,105,364.7,105,269.4c0-27.2,9.7-49.4,25.6-66.8c-2.6-6.3-11.1-31.6,2.4-65.9c0,0,20.9-6.7,68.4,25.5
+    c19.9-5.5,41.1-8.3,62.3-8.4c21.1,0.1,42.5,2.9,62.3,8.4c47.5-32.2,68.4-25.5,68.4-25.5c13.5,34.3,5,59.6,2.4,65.9
+    c16,17.4,25.6,39.6,25.6,66.8c0,95.6-58.2,116.6-113.6,122.8c8.9,7.7,16.9,22.9,16.9,46.1c0,33.3-0.3,60.1-0.3,68.3
+    c0,6.6,4.5,14.4,17.1,11.9c98.8-32.9,170-126.2,170-236.1C512.6,144.9,401.2,33.5,263.7,33.5z"/>
+  <path fill="white" d="M109.1,390.8c-0.5,1.2-2.5,1.6-4.3,0.8c-1.8-0.8-2.8-2.5-2.2-3.7c0.5-1.3,2.5-1.6,4.3-0.8
+    C108.7,387.8,109.8,389.6,109.1,390.8L109.1,390.8z M106.1,388.5"/>
+  <path fill="white" d="M119.2,402c-1.2,1.1-3.5,0.6-5.1-1.2c-1.6-1.7-1.9-4.1-0.7-5.2c1.2-1.1,3.5-0.6,5.1,1.2
+    C120.1,398.6,120.5,400.9,119.2,402L119.2,402z M116.9,399.5"/>
+  <path fill="white" d="M129,416.4c-1.5,1.1-4,0.1-5.6-2.1c-1.5-2.2-1.5-4.9,0-5.9c1.5-1.1,4-0.1,5.6,2.1
+    C130.6,412.6,130.6,415.3,129,416.4L129,416.4z M129,416.4"/>
+  <path fill="white" d="M142.5,430.2c-1.4,1.5-4.3,1.1-6.4-1c-2.2-2-2.8-4.9-1.4-6.4c1.4-1.5,4.3-1.1,6.4,1
+    C143.3,425.9,143.9,428.7,142.5,430.2L142.5,430.2z M142.5,430.2"/>
+  <path fill="white" d="M161,438.3c-0.6,1.9-3.4,2.8-6.2,2c-2.8-0.9-4.7-3.1-4.1-5.1c0.6-2,3.4-2.9,6.2-2
+    C159.8,434,161.6,436.3,161,438.3L161,438.3z M161,438.3"/>
+  <path fill="white" d="M181.4,439.7c0.1,2.1-2.3,3.8-5.3,3.8c-3,0.1-5.4-1.6-5.4-3.6c0-2.1,2.3-3.8,5.3-3.8
+    C179,436.1,181.4,437.7,181.4,439.7L181.4,439.7z M181.4,439.7"/>
+  <path fill="white" d="M200.3,436.5c0.4,2-1.7,4.1-4.6,4.6c-2.9,0.5-5.6-0.7-5.9-2.7c-0.4-2.1,1.7-4.1,4.6-4.6
+    C197.3,433.3,200,434.5,200.3,436.5L200.3,436.5z M200.3,436.5"/>
+</g>
+</svg></a>
+</center>
+<br>
+<hr  style="border-color: gray;">
+
+ <h5>Virtual Voice; Front-end com CSS e JavaScript</h5><hr  style="border-color: gray;">
+ 
+       <a href="https://fernandogreco.github.io/virtualVoice/indique.html" target="_blank">https://fernandogreco.github.io/virtualVoice/indique.html
+</a>      <br>
+
+ <a href="https://fernandogreco.github.io/virtualVoice/index.html" target="_blank">https://fernandogreco.github.io/virtualVoice/index.html
+</a>   
+
+ <br>
+
+ <a href="https://fernandogreco.github.io/virtualVoice/sobre.html" target="_blank">https://fernandogreco.github.io/virtualVoice/sobre.html
+</a>   
+
+
+      <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
+
+<hr  style="border-color: gray;">
+ <h5>STICCOR; Feito com PHP, Mysql e CSS.</h5><hr  style="border-color: gray;">
+ 
+ <a href="http://sticcor.com.br/" target="_blank">http://sticcor.com.br/
+</a>   
+      <img src="img/sticcor.jpg" width="100%" class="imgProjetos">
+
+
+
+<hr  style="border-color: gray;">
+      <h5>Single Page Application com TypeScript utilizando Framework Angular 2+</h5>
+  <hr  style="border-color: gray;">
+       <h5>Navegação através de rotas; CSS (Bootstrap)</h5><hr  style="border-color: gray;">
+       <a href="https://fernandogreco.github.io/SinglePageAngular2/" target="_blank">https://fernandogreco.github.io/SinglePageAngular2/</a><br><br>
+      <img src="img/layout.jpg" width="100%" class="imgProjetos"><br><br>
+       <a href="https://fernandogreco.github.io/incidentes/#/listar" target="_blank">https://fernandogreco.github.io/incidentes/#/listar</a><br><br>
+      <img src="img/incidentes.jpg" width="100%" class="imgProjetos">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+ </div>
      </div>
 </div>
   </section>
