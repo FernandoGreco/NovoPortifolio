@@ -225,6 +225,10 @@ box-shadow: 9px 5px 7px gray;
 .formacao{
  font-size: 18px; color:black; background-color: white; margin: 20px;
 }
+
+.formacaoMenor{
+display: none;
+}
  @keyframes pisca {
   0%, 100%{
     opacity: 1;
@@ -294,13 +298,15 @@ transform: translateY(-40%);
   width: 150px;
 }
 
-
 }
 
 
 @media only screen and (max-width: 600px) {
 
- 
+  .nome{
+ margin: 10px 0px 0px 15px;
+ }
+
 .descricao{
 max-width: 90%;
 font-size: 20px;
@@ -315,12 +321,35 @@ font-size: 20px;
 
 
 .formacao{
- font-size: 14px;   margin-top: 100px; position: absolute;
- width: 100%;
+display: none;
+}
+
+.formacaoMenor{
+display: inherit;
+position: absolute;
+margin-top: 40%;
+background-color: white;
+width: 90%;
+}
+
+.txtBotao{
+  display: none;
+}
+
+.btn.sobre{
+  margin-bottom: 10px;
 }
 
 }
 
+@media only screen and (max-width: 400px) {
+
+.formacaoMenor{
+margin-top: 55%;
+
+}
+
+}
 
 
 </style>
@@ -357,6 +386,8 @@ font-size: 20px;
       <img src="img/rosto2.jpg" class="rosto" />
        <p class="nome">Fernando Greco</p>
     </div>
+    <p class="formacaoMenor">Formação: Bacharelado em Sistemas de Informação 
+[FMU] 2014 / 2017.</p>
     <div class="col-10" align="center">
     <div class="iconeSobre">
 <h3>Sobre</h3>
@@ -396,12 +427,12 @@ font-size: 20px;
   </div>
 
   <div class="row fundoSoreCuros" align="center">
-    <div class="col-3">
+    <div class="col-6 col-sm-3">
   <p class="txtBotao">  Cursos </p>
 
       <!-- Button trigger modal -->
-<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal1">
-  <img src="https://img.icons8.com/material/124/000000/school.png">
+<button type="button" class="btn sobre" data-toggle="modal" data-target="#exampleModal1">
+  <img src="https://img.icons8.com/material/124/000000/school.png" width="100%">
 </button>
 
 <!-- Modal -->
@@ -462,16 +493,16 @@ Linguagens: C, PHP, CSS (Layout Responsivo, GridSystem, Framework: Bootstrap, Ma
     </div>
    
 
-    <div class="col-3">
+    <div class="col-6 col-sm-3">
       <p class="txtBotao">Currículo</p>
 
 
 
       <!-- Button trigger modal -->
-<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal5">
+<button type="button" class="btn sobre" data-toggle="modal" data-target="#exampleModal5">
  
       
-  <img src="https://img.icons8.com/material/124/000000/submit-resume.png">
+  <img src="https://img.icons8.com/material/124/000000/submit-resume.png" width="100%">
 </button>
 
 <!-- Modal -->
@@ -535,7 +566,7 @@ Cargo: Diagramador.<br>
     </div>
 
 
-     <div class="col-3">
+     <div class="col-6 col-sm-3">
       <p class="txtBotao">Videos</p>
 
 
@@ -543,7 +574,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal6">
  
-      <img src="https://img.icons8.com/material/124/000000/youtube.png">
+      <img src="https://img.icons8.com/material/124/000000/youtube.png" width="100%">
 </button>
 
 <!-- Modal -->
@@ -568,7 +599,7 @@ Cargo: Diagramador.<br>
     </div>
 
 
-  <div class="col-3">
+  <div class="col-6 col-sm-3">
       <p class="txtBotao">Histórico </p>
 
 
@@ -576,7 +607,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal7">
  
-      <img src="https://img.icons8.com/material/124/000000/test-passed.png">
+      <img src="https://img.icons8.com/material/124/000000/test-passed.png" width="100%">
 </button>
 
 <!-- Modal -->
