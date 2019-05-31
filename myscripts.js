@@ -1,7 +1,7 @@
 
 
 var div = document.getElementById('log');
-var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'printf ("-Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Junior]");','select tecnologias from fernando where status = "utilizadas";','Mysql, C, PHP, Java, JavaScript, TypeScript, CSS', 'Frameworks: Bootstrap, Angular 2+'];
+var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'alert ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','PHP, Mysql, JavaScript e CSS (Bootstrap)'];
 var txt2 = textos;
 
 
