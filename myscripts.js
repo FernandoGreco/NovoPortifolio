@@ -1,9 +1,8 @@
 
 
 var div = document.getElementById('log');
-var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'printf ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','select tecnologias from fernando where status = "utilizadas";','Mysql,  PHP, JavaScript, CSS (Bootstrap)'];
+var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'alert ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','PHP, Mysql, JavaScript e CSS (Bootstrap)'];
 var txt2 = textos;
-
 
 function escrever(str, done) {
     var char = str.split('').reverse();
