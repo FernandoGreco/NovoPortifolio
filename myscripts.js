@@ -4,7 +4,6 @@ var div = document.getElementById('log');
 var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'alert ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','PHP, Mysql, JavaScript e CSS (Bootstrap)'];
 var txt2 = textos;
 
-
 function escrever(str, done) {
     var char = str.split('').reverse();
     var typer = setInterval(function() {
