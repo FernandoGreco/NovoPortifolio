@@ -70,11 +70,11 @@
   }
 .rosto{
   position: relative;
-top: 50%;
+top: 53%;
 transform: translateY(-50%); 
   width:150px;
   z-index: 4!important;
-   border-radius: 50%; 
+   border-radius: 5px; 
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }  
 .row.fundoSore{
@@ -82,13 +82,6 @@ transform: translateY(-50%);
   background-color: gray;
   width: 93%;
   z-index: 1;
-  border-radius: 10px;
-    border-style: solid;
-  border-color: #6E6E6E;
-   border-bottom-width: 0;
-  border-top-width: medium;
-  border-right-width: 0;
-  border-left-width: 0;
   margin-left: 3%;
 }
 .row.fundoSoreCuros{
@@ -180,7 +173,8 @@ box-shadow: 9px 5px 7px gray;
   animation: pisca .7s infinite;
  }
  .nome{
-  color: white; position: absolute; margin: 55px 0px 0px 15px;
+  color: white; position: absolute; margin: -85px 0px 0px 145px; z-index: 10; font-weight: bold; text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black; text-align: center; background-color: black; padding: 10px; width: 200px; 
  }
 .modal-body, .modal-title{
   color: black;
@@ -191,9 +185,7 @@ box-shadow: 9px 5px 7px gray;
 .formacao{
  font-size: 18px; color:black; background-color: white; margin: 20px; padding: 7px;
 }
-.formacaoMenor{
-display: none;
-}
+
 
 .logosSVG{
   width: 54px;
@@ -211,11 +203,7 @@ display: none;
     opacity: 0;
   }
  }
-@media only screen and (max-width: 1200px){
-   .nome{
- margin: 75px 0px 0px 15px;
- }
-}
+
 @media only screen and (max-width: 1000px) {
 
   .tituloProjetos.git{
@@ -227,15 +215,7 @@ display: none;
 .row.fundoSore,.row.fundoSoreCuros{
   border: 0;
 }
-.rosto{
-top: 30%;
-transform: translateY(-40%); 
- 
-}  
 
-   .nome{
- margin: 22px 0px 0px 15px;
- }
 
   .someEm1000{
   display: none;
@@ -247,7 +227,6 @@ transform: translateY(-40%);
 
 }
 @media only screen and (max-width: 800px) {
-
 
 .txtContatos{
  font-size: 25px;
@@ -276,9 +255,19 @@ transform: translateY(-40%);
 }
 .nome{
   width: 150px;
+  margin-left:290%;
+  margin-top: -100px;
 }
+
+
 }
 @media only screen and (max-width: 600px) {
+
+.rosto{
+
+  width:100px;
+  margin-top: -20px;
+}  
 
 .txtContatos{
  text-align: center;
@@ -294,16 +283,14 @@ transform: translateY(-40%);
 
  
   .nome{
- margin: 10px 0px 0px 15px;
+ margin-top: 5px;
+ margin-left: 100px;
  }
 .descricao{
 max-width: 90%;
 font-size: 20px;
 }
-.rosto{
-  width: 120px;
-  top: 20%;
-}
+
 .formacao{
 display: none;
 }
@@ -321,8 +308,10 @@ font-size: 12px;
   display: none;
 }
 .btn.sobre{
-  margin-bottom: 10px;
+  margin-bottom:-30px;
 }
+
+
 }
 
 @media only screen and (max-width: 575px) {
