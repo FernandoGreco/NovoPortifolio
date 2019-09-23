@@ -47,15 +47,7 @@ function rodape(conteudos, el) {
 
 rodape(textos);
 
-typeWriter(txt2);
-//escreve texto e para
- function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-      setTimeout(() => elemento.innerHTML += letra, 175 * i);
-    });
-  }
+
 
   // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
   // function typeWriter(elemento) {
@@ -66,5 +58,3 @@ typeWriter(txt2);
   //   }
   // }
 
-  const titulo = document.querySelector('mn');
-  typeWriter(titulo);

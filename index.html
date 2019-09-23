@@ -8,13 +8,57 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav class="links">
-  <label for="rd_inicio">Início</label>
-  <label for="rd_bootstrap"> Sobre</label>
-  <label for="rd_sass">Projetos</label>
-  <label for="rd_ruby">Contato</label>
+<nav class="links" id="myTopnav">
+ <label onclick="menu()">
+   <div class='iconeMenu' id="iconeMenu"></div>
+<div class='iconeMenu' id="iconeMenu2"></div>
+<div class='iconeMenu' id="iconeMenu3"></div>
+<div class="orangeBox" id="x">
+  <span id="x">X</span>
+</div>
+ </label>
+
+  <label id="menus" for="rd_inicio">Início</label>
+  <label id="menus2" for="rd_bootstrap"> Sobre</label>
+  <label id="menus3" for="rd_sass">Projetos</label>
+  <label id="menus4" for="rd_ruby">Contato</label>
+
 </nav>
 
+<script type="text/javascript">
+  
+function menu(){
+
+var x = document.getElementById("menus");
+
+
+
+console.log(document.getElementById("menus"));
+if(x.style.display === "none"){
+  document.getElementById("menus").style.display = 'inline-block';
+  document.getElementById("menus2").style.display = 'inline-block';
+  document.getElementById("menus3").style.display = 'inline-block';
+  document.getElementById("menus4").style.display = 'inline-block';
+  document.getElementById("iconeMenu").style.display= 'none';
+  document.getElementById("iconeMenu2").style.display= 'none';
+  document.getElementById("iconeMenu3").style.display= 'none';
+  document.getElementById("x").style.display= 'inline-block';
+
+}
+else{
+  document.getElementById("menus").style.display = 'none';
+    document.getElementById("menus2").style.display = 'none';
+    document.getElementById("menus3").style.display = 'none';
+  document.getElementById("menus4").style.display = 'none';
+    document.getElementById("iconeMenu").style.display= 'inherit';
+  document.getElementById("iconeMenu2").style.display= 'inherit';
+  document.getElementById("iconeMenu3").style.display= 'inherit';
+  document.getElementById("x").style.display= 'none';
+}
+
+
+}
+</script>
 
 
 <div class="scroll">
