@@ -309,7 +309,11 @@ box-shadow: 9px 5px 7px gray;
     margin: 0px;
 }
 
- .links label:hover{
+ .links label:hover:nth-child(1){
+    background-color: none;
+  }
+
+   .links label:hover:nth-child(2),.links label:hover:nth-child(3),.links label:hover:nth-child(4),.links label:hover:nth-child(5) {
     background-color: gray;
   }
 .links{
