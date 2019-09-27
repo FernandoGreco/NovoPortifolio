@@ -3,6 +3,14 @@
     padding: 0;
   }
 
+
+  .ligth{
+ width: 50px;
+position: absolute;
+margin-top: 50px;
+margin-left: 85%;
+  }
+
   .orangeBox {
   color: #fff;
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -13,6 +21,7 @@
   height: 35px;
   border-radius: 5px;
   margin-left: -90%;
+
 }
   .links{
     width: 100%;
@@ -380,6 +389,10 @@ font-size: 12px;
  .row.menor{
     width: 70%;
     margin-left: 15%;
+  }
+
+.btn-primary.projetosMenor{
+ width: 100%;
   }
 }
 
