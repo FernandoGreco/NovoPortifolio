@@ -67,10 +67,12 @@ z-index: 100;
     align-items: center;
     display: flex;
   }
-  #inicio,  #sass{
+  #inicio,  #sass,  #ruby{
     background-color: black;
   }
-  #ruby, #bootstrap{
+
+
+ #bootstrap{
     background-color: gray;
   }
   .scroll{
