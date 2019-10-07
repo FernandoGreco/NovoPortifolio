@@ -67,12 +67,12 @@ z-index: 100;
     align-items: center;
     display: flex;
   }
-  #inicio,  #sass,  #ruby{
+  #inicio,  #ruby{
     background-color: black;
   }
 
 
- #bootstrap{
+ #bootstrap,  #sass{
     background-color: gray;
   }
   .scroll{
@@ -142,20 +142,22 @@ transform: translateY(-50%);
   margin: 20px;
   font-size: 17px;
   }
-  .projetosMenor{
+  .btn-primary.projetosMenor{
     padding-top: 10px;
     padding-bottom: 0px;
     margin-top: 15px;
-    color: black;
+    color: white;
     width: 100%;
     display: none;
     background-color: gray;
+    border-color: white;
   }
 
-    .projetosMenor:hover{
+  .btn-primary.projetosMenor:hover{
     
-
-    background-color: gray;
+    color: white;
+   background-color: black;
+    border-color: azure;
   }
 
  .txtBotao{
@@ -177,7 +179,7 @@ transform: translateY(-50%);
   font-size: 30px;
 }
 .imgProjetos:hover{
-box-shadow: 9px 5px 7px gray;
+box-shadow: 9px 5px 7px black;
 -webkit-transition: 0.3s ease-in;
 -moz-transition: 0.3s ease-in;
 -o-transition: 0.3s ease-in;
@@ -201,7 +203,7 @@ box-shadow: 9px 5px 7px gray;
   animation: pisca .7s infinite;
  }
  .nome{
-  color: white; position: absolute; margin: -85px 0px 0px 145px; z-index: 10; font-weight: bold; text-shadow: -1px 0 black, 0 1px black,
+  color: white; position: absolute; margin: -10px 0px 0px 145px; z-index: 10; font-weight: bold; text-shadow: -1px 0 black, 0 1px black,
       1px 0 black, 0 -1px black; text-align: center; background-color: black; padding: 10px; width: 200px; 
  }
 .modal-body, .modal-title{
@@ -221,7 +223,9 @@ box-shadow: 9px 5px 7px gray;
 
 }
 
-
+button.btnProjetos{
+  background-color: gray;
+}
 
  @keyframes pisca {
   0%, 100%{
@@ -261,8 +265,9 @@ box-shadow: 9px 5px 7px gray;
   display: none;
 }
 
-  .projetosMenor{
+.btn-primary.projetosMenor{
     display: inherit;
+    padding-bottom: 10px;
   }
 
 }
@@ -300,7 +305,7 @@ box-shadow: 9px 5px 7px gray;
 .nome{
   width: 150px;
   margin-left:290%;
-  margin-top: -100px;
+  margin-top: -30px;
 }
 
 
@@ -361,7 +366,7 @@ box-shadow: 9px 5px 7px gray;
 
  
   .nome{
- margin-top: 5px;
+ margin-top: 35px;
  margin-left: 100px;
  }
 .descricao{
