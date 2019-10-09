@@ -82,17 +82,20 @@ function menu(){
 
     var fOurT = false;
     function luz(){
-        
-      //  var x = document.getElementById("inicio");
+
+           //  var x = document.getElementById("inicio");
         if( fOurT === false){
-            document.getElementById("inicio").style.backgroundColor = 'white';
-           
            fOurT = true;
+            document.getElementById("inicio").style.backgroundColor = 'white';
+             document.getElementById("log").style.borderStyle= 'solid';
+            document.getElementById("log").style.color = 'black';
         }
      
         else
         {
             document.getElementById("inicio").style.backgroundColor = 'black';
+            document.getElementById("log").style.backgroundColor = 'white';
+            document.getElementById("log").style.color = 'black';
             fOurT = false;
         }
       }
