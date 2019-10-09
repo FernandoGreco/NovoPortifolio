@@ -47,7 +47,55 @@ function rodape(conteudos, el) {
 
 rodape(textos);
 
+function menu(){
 
+    var x = document.getElementById("menus");
+    
+    
+    
+    console.log(document.getElementById("menus"));
+    if(x.style.display === "none"){
+      document.getElementById("menus").style.display = 'inline-block';
+      document.getElementById("menus2").style.display = 'inline-block';
+      document.getElementById("menus3").style.display = 'inline-block';
+      document.getElementById("menus4").style.display = 'inline-block';
+      document.getElementById("iconeMenu").style.display= 'none';
+      document.getElementById("iconeMenu2").style.display= 'none';
+      document.getElementById("iconeMenu3").style.display= 'none';
+      document.getElementById("x").style.display= 'inline-block';
+    
+    }
+    else{
+      document.getElementById("menus").style.display = 'none';
+        document.getElementById("menus2").style.display = 'none';
+        document.getElementById("menus3").style.display = 'none';
+      document.getElementById("menus4").style.display = 'none';
+        document.getElementById("iconeMenu").style.display= 'inherit';
+      document.getElementById("iconeMenu2").style.display= 'inherit';
+      document.getElementById("iconeMenu3").style.display= 'inherit';
+      document.getElementById("x").style.display= 'none';
+    }
+    
+    
+    }
+
+
+    var fOurT = false;
+    function luz(){
+        
+      //  var x = document.getElementById("inicio");
+        if( fOurT === false){
+            document.getElementById("inicio").style.backgroundColor = 'white';
+           
+           fOurT = true;
+        }
+     
+        else
+        {
+            document.getElementById("inicio").style.backgroundColor = 'black';
+            fOurT = false;
+        }
+      }
 
   // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
   // function typeWriter(elemento) {

@@ -29,44 +29,14 @@
 
 <script type="text/javascript">
   
-function menu(){
 
-var x = document.getElementById("menus");
-
-
-
-console.log(document.getElementById("menus"));
-if(x.style.display === "none"){
-  document.getElementById("menus").style.display = 'inline-block';
-  document.getElementById("menus2").style.display = 'inline-block';
-  document.getElementById("menus3").style.display = 'inline-block';
-  document.getElementById("menus4").style.display = 'inline-block';
-  document.getElementById("iconeMenu").style.display= 'none';
-  document.getElementById("iconeMenu2").style.display= 'none';
-  document.getElementById("iconeMenu3").style.display= 'none';
-  document.getElementById("x").style.display= 'inline-block';
-
-}
-else{
-  document.getElementById("menus").style.display = 'none';
-    document.getElementById("menus2").style.display = 'none';
-    document.getElementById("menus3").style.display = 'none';
-  document.getElementById("menus4").style.display = 'none';
-    document.getElementById("iconeMenu").style.display= 'inherit';
-  document.getElementById("iconeMenu2").style.display= 'inherit';
-  document.getElementById("iconeMenu3").style.display= 'inherit';
-  document.getElementById("x").style.display= 'none';
-}
-
-
-}
 </script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<svg id="Layer_1" data-name="Layer 1" class='ligth' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.67 286.88"><defs><style>.cls-1,.cls-2{fill:none;stroke:yellow;stroke-miterlimit:10;}.cls-1{stroke-width:5px;}.cls-2{stroke-width:10px;}</style></defs><title>122-512</title><polygon class="cls-1" points="30.68 48.43 44.68 35.09 70.68 61.09 60.02 73.09 30.68 48.43"/><polygon class="cls-1" points="125.94 2.58 145.27 3.12 145.14 39.88 129.11 40.77 125.94 2.58"/><polygon class="cls-1" points="228.88 33.29 239.74 49.29 209.84 70.68 199.75 58.19 228.88 33.29"/><polygon class="cls-1" points="271.98 127.53 270.56 146.81 233.83 145 233.68 128.95 271.98 127.53"/><polygon class="cls-1" points="240.12 229.39 226.37 242.98 199.89 217.47 210.33 205.27 240.12 229.39"/><polygon class="cls-1" points="154.03 264.98 152.49 284.25 115.78 282.22 115.72 266.16 154.03 264.98"/><polygon class="cls-1" points="45.1 242.36 32.68 227.55 60.27 203.24 71.57 214.65 45.1 242.36"/><polygon class="cls-1" points="2.7 150.62 4.17 131.34 40.89 133.23 41.01 149.28 2.7 150.62"/><path class="cls-2" d="M124,244.67h56s1.33-37.34,28.67-75.34c30-114.66-150-111.33-115.34,5.34C113.11,203.15,124,244.67,124,244.67Z" transform="translate(-14.65 -6.91)"/></svg>
+<svg onclick="luz()" id="Layer_1" data-name="Layer 1" class='ligth' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.67 286.88"><defs><style>.cls-1,.cls-2{fill:none;stroke:yellow;stroke-miterlimit:10;}.cls-1{stroke-width:5px;}.cls-2{stroke-width:10px;}</style></defs><title>122-512</title><polygon class="cls-1" points="30.68 48.43 44.68 35.09 70.68 61.09 60.02 73.09 30.68 48.43"/><polygon class="cls-1" points="125.94 2.58 145.27 3.12 145.14 39.88 129.11 40.77 125.94 2.58"/><polygon class="cls-1" points="228.88 33.29 239.74 49.29 209.84 70.68 199.75 58.19 228.88 33.29"/><polygon class="cls-1" points="271.98 127.53 270.56 146.81 233.83 145 233.68 128.95 271.98 127.53"/><polygon class="cls-1" points="240.12 229.39 226.37 242.98 199.89 217.47 210.33 205.27 240.12 229.39"/><polygon class="cls-1" points="154.03 264.98 152.49 284.25 115.78 282.22 115.72 266.16 154.03 264.98"/><polygon class="cls-1" points="45.1 242.36 32.68 227.55 60.27 203.24 71.57 214.65 45.1 242.36"/><polygon class="cls-1" points="2.7 150.62 4.17 131.34 40.89 133.23 41.01 149.28 2.7 150.62"/><path class="cls-2" d="M124,244.67h56s1.33-37.34,28.67-75.34c30-114.66-150-111.33-115.34,5.34C113.11,203.15,124,244.67,124,244.67Z" transform="translate(-14.65 -6.91)"/></svg>
 <div class="scroll">
   <input type="radio" name="grupo" id="rd_inicio" checked="true">
   <input type="radio" name="grupo" id="rd_bootstrap">
@@ -86,7 +56,7 @@ else{
 
   <div class="row fundoSore">
     <div class="col-2">
-      <img src="img/rosto6.jpg" class="rosto" />
+      <img src="img/rosto5.jpg" class="rosto" />
        <p class="nome">Fernando Greco</p>
     </div>
      <div class="col-10" align="center">
@@ -365,7 +335,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal10">
  
-      <h4 class="tituloProjetos">Jornal Folha Oeste</h4> <hr style="border-color: white;">  
+      <h4 class="tituloProjetos">Jornal Folha Oeste</h4> 
       <img src="img/folhaOeste.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -426,7 +396,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal19">
  
-      <h4 class="tituloProjetos">Engenheiro Diego</h4> <hr style="border-color: white;">  
+      <h4 class="tituloProjetos">Engenheiro Diego</h4>   
       <img src="img/engDiego.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -458,7 +428,7 @@ Cargo: Diagramador.<br>
 
     <div class="col-12 col-sm-6 col-lg-4 some">
       
-<h4 class="tituloProjetos git">GitHub</h4><hr  style="border-color: white;">
+<h4 class="tituloProjetos git">GitHub</h4>
      <center><a href="https://github.com/FernandoGreco" target="_blank"> <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    x="0px" y="0px" viewBox="0 0 531 552" xml:space="preserve" width="50%" class="imgProjetosGit">
 <g>
@@ -494,7 +464,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal20">
  
-      <h4 class="tituloProjetos">Virtual Voice</h4> <hr style="border-color: white;">  
+      <h4 class="tituloProjetos">Virtual Voice</h4>
       <img src="img/virtualVoice.jpg" width="100%" class="imgProjetos">
 </button>
 
@@ -541,7 +511,7 @@ Cargo: Diagramador.<br>
  <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal11">
  
-           <h4 class="tituloProjetos">STICCOR</h4><hr  style="border-color: white;">
+           <h4 class="tituloProjetos">STICCOR</h4>
             <img src="img/sticcor.jpg" width="100%" class="imgProjetos">
        
 </button>
@@ -584,7 +554,7 @@ Cargo: Diagramador.<br>
       <!-- Button trigger modal -->
 <button type="button" class="btnProjetos" data-toggle="modal" data-target="#exampleModal12">
  <br>
-           <h4 class="tituloProjetos">Outros Projetos</h4><hr  style="border-color: white;">
+           <h4 class="tituloProjetos">Outros Projetos</h4>
       <img src="img/uapo.jpg" width="100%" class="imgProjetos">
        
 </button>
