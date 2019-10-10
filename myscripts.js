@@ -87,15 +87,26 @@ function menu(){
         if( fOurT === false){
            fOurT = true;
             document.getElementById("inicio").style.backgroundColor = 'white';
-             document.getElementById("log").style.borderStyle= 'solid';
             document.getElementById("log").style.color = 'black';
-        }
+            document.getElementById("lua").style.display = 'inherit';
+            document.getElementById("luz").style.display = 'none';
+            document.getElementById("menus").style.color = 'black';
+            document.getElementById("menus2").style.color = 'black';
+            document.getElementById("menus3").style.color = 'black';
+            document.getElementById("menus4").style.color = 'black';
+                    }
      
         else
         {
             document.getElementById("inicio").style.backgroundColor = 'black';
             document.getElementById("log").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
+            document.getElementById("lua").style.display = 'none';
+            document.getElementById("luz").style.display = 'inherit';
+            document.getElementById("menus").style.color = 'white';
+            document.getElementById("menus2").style.color = 'white';
+            document.getElementById("menus3").style.color = 'white';
+            document.getElementById("menus4").style.color = 'white';
             fOurT = false;
         }
       }

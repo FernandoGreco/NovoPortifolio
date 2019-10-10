@@ -5,24 +5,28 @@
 
 
   .ligth{
- width: 50px;
-position: absolute;
-margin-top: 50px;
-margin-left: 85%;
-z-index: 100;
-cursor: pointer;
+    width: 50px;
+
+  }
+
+  .ligth,.lua{
+    position: absolute;
+    margin-top: 50px;
+    cursor: pointer;
+    z-index: 100;
+    margin-left: 85%;
   }
 
 
 .lua{
-position: absolute;
-margin-top: 150px;
-margin-left: 80%;
-z-index: 100;
-cursor: pointer;
-width: 40px!important;
+  -webkit-transform: rotate(175deg);
+  -moz-transform: rotate(175deg);
+  -ms-transform: rotate(175deg);
+  -o-transform: rotate(175deg);
+  transform: rotate(175deg);
+width: 35px!important;
 fill:#2250a0!important;
-
+display: none;
 
 }
   .orangeBox {
