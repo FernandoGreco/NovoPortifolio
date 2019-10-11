@@ -47,6 +47,9 @@ function rodape(conteudos, el) {
 
 rodape(textos);
 
+// document.getElementsByTagName("LABEL")[1].style.display='none';
+ // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
+
 function menu(){
 
     var x = document.getElementById("menus");
@@ -86,6 +89,7 @@ function menu(){
            //  var x = document.getElementById("inicio");
         if( fOurT === false){
            fOurT = true;
+           document.getElementById("menus4").style.backgroundColor = 'white';
             document.getElementById("inicio").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
             document.getElementById("lua").style.display = 'inherit';
@@ -94,10 +98,23 @@ function menu(){
             document.getElementById("menus2").style.color = 'black';
             document.getElementById("menus3").style.color = 'black';
             document.getElementById("menus4").style.color = 'black';
+
+
+            document.getElementById("menus4").onmouseover  = function() 
+{
+    this.style.backgroundColor = "gray";
+}
+
+ document.getElementById("menus4").onmouseleave = function() 
+{
+    this.style.backgroundColor = "white";
+}
+           
                     }
      
         else
         {
+            document.getElementById("menus4").style.backgroundColor = 'black';
             document.getElementById("inicio").style.backgroundColor = 'black';
             document.getElementById("log").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
@@ -107,7 +124,19 @@ function menu(){
             document.getElementById("menus2").style.color = 'white';
             document.getElementById("menus3").style.color = 'white';
             document.getElementById("menus4").style.color = 'white';
+            
             fOurT = false;
+
+            document.getElementById("menus4").onmouseover  = function() 
+{
+    this.style.backgroundColor = "gray";
+}
+
+ document.getElementById("menus4").onmouseleave = function() 
+{
+    this.style.backgroundColor = "black";
+}
+
         }
       }
 
