@@ -47,7 +47,7 @@ function rodape(conteudos, el) {
 
 rodape(textos);
 
-// document.getElementsByTagName("LABEL")[1].style.display='none';
+ 
  // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
 
 function menu(){
@@ -89,21 +89,56 @@ function menu(){
            //  var x = document.getElementById("inicio");
         if( fOurT === false){
            fOurT = true;
-           document.getElementById("menus4").style.backgroundColor = 'white';
+
+           var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+            
+
             document.getElementById("inicio").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
             document.getElementById("lua").style.display = 'inherit';
             document.getElementById("luz").style.display = 'none';
-            document.getElementById("menus").style.color = 'black';
-            document.getElementById("menus2").style.color = 'black';
-            document.getElementById("menus3").style.color = 'black';
-            document.getElementById("menus4").style.color = 'black';
+
+            for (var i = 0; i < vetorMenu.length; i++) {
+                document.getElementById(vetorMenu[i]).style.color = 'black';
+                document.getElementById(vetorMenu[i]).style.backgroundColor = 'white';
+              }
+
+              document.getElementById("menus").onmouseover  = function() 
+              {
+                  this.style.backgroundColor = "#F8F8FF";
+              }
+              
+               document.getElementById("menus").onmouseleave = function() 
+              {
+                  this.style.backgroundColor = "white";
+              }
 
 
-            document.getElementById("menus4").onmouseover  = function() 
-{
-    this.style.backgroundColor = "gray";
-}
+              document.getElementById("menus2").onmouseover  = function() 
+              {
+                  this.style.backgroundColor = "#F8F8FF";
+              }
+              
+               document.getElementById("menus2").onmouseleave = function() 
+              {
+                  this.style.backgroundColor = "white";
+              }
+
+
+              document.getElementById("menus3").onmouseover  = function() 
+              {
+                  this.style.backgroundColor = "#F8F8FF";
+              }
+              
+               document.getElementById("menus3").onmouseleave = function() 
+              {
+                  this.style.backgroundColor = "white";
+              }
+
+              document.getElementById("menus4").onmouseover  = function() 
+              {
+                  this.style.backgroundColor = "#F8F8FF";
+              }
 
  document.getElementById("menus4").onmouseleave = function() 
 {
@@ -114,6 +149,9 @@ function menu(){
      
         else
         {
+            document.getElementById("menus").style.backgroundColor = 'black';
+            document.getElementById("menus2").style.backgroundColor = 'black';
+            document.getElementById("menus3").style.backgroundColor = 'black';
             document.getElementById("menus4").style.backgroundColor = 'black';
             document.getElementById("inicio").style.backgroundColor = 'black';
             document.getElementById("log").style.backgroundColor = 'white';
@@ -127,9 +165,40 @@ function menu(){
             
             fOurT = false;
 
+            document.getElementById("menus").onmouseover  = function() 
+{
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
+}
+
+ document.getElementById("menus").onmouseleave = function() 
+{
+    this.style.backgroundColor = "black";
+}
+
+
+document.getElementById("menus2").onmouseover  = function() 
+{
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
+}
+
+ document.getElementById("menus2").onmouseleave = function() 
+{
+    this.style.backgroundColor = "black";
+}
+
+document.getElementById("menus3").onmouseover  = function() 
+{
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
+}
+
+ document.getElementById("menus3").onmouseleave = function() 
+{
+    this.style.backgroundColor = "black";
+}
+
             document.getElementById("menus4").onmouseover  = function() 
 {
-    this.style.backgroundColor = "gray";
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
 
  document.getElementById("menus4").onmouseleave = function() 
