@@ -92,6 +92,10 @@ function menu(){
 
            var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
             
+            document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
+            document.getElementById("iconeMenu").style.backgroundColor= '#2250a0';
+            document.getElementById("iconeMenu2").style.backgroundColor= '#2250a0';
+            document.getElementById("iconeMenu3").style.backgroundColor= '#2250a0';
 
             document.getElementById("inicio").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
@@ -149,6 +153,11 @@ function menu(){
      
         else
         {
+            document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
+            document.getElementById("iconeMenu").style.backgroundColor= 'yellow';
+            document.getElementById("iconeMenu2").style.backgroundColor= 'yellow';
+            document.getElementById("iconeMenu3").style.backgroundColor= 'yellow';
+
             document.getElementById("menus").style.backgroundColor = 'black';
             document.getElementById("menus2").style.backgroundColor = 'black';
             document.getElementById("menus3").style.backgroundColor = 'black';
