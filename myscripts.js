@@ -90,17 +90,37 @@ function menu(){
         if( fOurT === false){
            fOurT = true;
 
-           var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+           let vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+
+           let vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
             
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
-            document.getElementById("iconeMenu").style.backgroundColor= '#2250a0';
-            document.getElementById("iconeMenu2").style.backgroundColor= '#2250a0';
-            document.getElementById("iconeMenu3").style.backgroundColor= '#2250a0';
+            document.getElementsByTagName("SPAN")[0].style.color = '#2250a0';
 
             document.getElementById("inicio").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
+
+            document.getElementById("bootstrap").style.backgroundColor = 'white';
+            document.getElementById("sobre").style.backgroundColor = 'white';
+            document.getElementById("fundoCursos").style.backgroundColor = 'white';
+            document.getElementById("txtSobre").style.color = '#6E6E6E';
+            document.getElementById("txtBtn").style.color = '#6E6E6E';
+            document.getElementById("txtBtn").style.backgroundColor = 'white';
+            document.getElementById("txtBtn2").style.color = '#6E6E6E';
+            document.getElementById("txtBtn3").style.color = '#6E6E6E';
+            document.getElementById("txtBtn4").style.color = '#6E6E6E';
+
+
+         //   document.getElementById("log").style.color = 'black';
+
             document.getElementById("lua").style.display = 'inherit';
             document.getElementById("luz").style.display = 'none';
+
+
+              for (var i = 0; i < vetorIconeMenu.length; i++) {
+               document.getElementById( vetorIconeMenu[i]).style.backgroundColor= '#2250a0';           
+                              }
+
 
             for (var i = 0; i < vetorMenu.length; i++) {
                 document.getElementById(vetorMenu[i]).style.color = 'black';
@@ -154,6 +174,7 @@ function menu(){
         else
         {
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
+            document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
             document.getElementById("iconeMenu").style.backgroundColor= 'yellow';
             document.getElementById("iconeMenu2").style.backgroundColor= 'yellow';
             document.getElementById("iconeMenu3").style.backgroundColor= 'yellow';
@@ -162,6 +183,9 @@ function menu(){
             document.getElementById("menus2").style.backgroundColor = 'black';
             document.getElementById("menus3").style.backgroundColor = 'black';
             document.getElementById("menus4").style.backgroundColor = 'black';
+
+
+
             document.getElementById("inicio").style.backgroundColor = 'black';
             document.getElementById("log").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
@@ -172,6 +196,8 @@ function menu(){
             document.getElementById("menus3").style.color = 'white';
             document.getElementById("menus4").style.color = 'white';
             
+   
+
             fOurT = false;
 
             document.getElementById("menus").onmouseover  = function() 
