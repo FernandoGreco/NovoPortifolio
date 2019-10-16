@@ -109,6 +109,54 @@ function menu(){
             document.getElementById("txtBtn2").style.color = '#6E6E6E';
             document.getElementById("txtBtn3").style.color = '#6E6E6E';
             document.getElementById("txtBtn4").style.color = '#6E6E6E';
+            document.getElementById("btnSobre").style.backgroundColor = 'white';
+            document.getElementById("btnSobre2").style.backgroundColor = 'white';
+            document.getElementById("btnSobre3").style.backgroundColor = 'white';
+            document.getElementById("btnSobre4").style.backgroundColor = 'white';
+
+            document.getElementById("btnSobre").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#E0FFFF";
+            }
+
+            document.getElementById("btnSobre").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "white";
+            }
+
+            
+            document.getElementById("btnSobre2").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#E0FFFF";
+            }
+
+            document.getElementById("btnSobre2").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "white";
+            }
+
+            
+            document.getElementById("btnSobre3").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#E0FFFF";
+            }
+
+            document.getElementById("btnSobre3").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "white";
+            }
+
+            
+            document.getElementById("btnSobre4").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#E0FFFF";
+            }
+
+            document.getElementById("btnSobre4").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "white";
+            }
+
 
 
          //   document.getElementById("log").style.color = 'black';
@@ -196,7 +244,64 @@ function menu(){
             document.getElementById("menus3").style.color = 'white';
             document.getElementById("menus4").style.color = 'white';
             
-   
+            document.getElementById("bootstrap").style.backgroundColor = 'gray';
+            document.getElementById("sobre").style.backgroundColor = 'gray';
+            document.getElementById("fundoCursos").style.backgroundColor = 'gray';
+            document.getElementById("txtSobre").style.color = 'white';
+            document.getElementById("txtBtn").style.color = 'white';
+            document.getElementById("txtBtn").style.backgroundColor = 'gray';
+            document.getElementById("txtBtn2").style.color = 'white';
+            document.getElementById("txtBtn3").style.color = 'white';
+            document.getElementById("txtBtn4").style.color = 'white';
+            document.getElementById("btnSobre").style.backgroundColor = '#A4A4A4';
+            document.getElementById("btnSobre2").style.backgroundColor = '#A4A4A4';
+            document.getElementById("btnSobre3").style.backgroundColor = '#A4A4A4';
+            document.getElementById("btnSobre4").style.backgroundColor = '#A4A4A4';
+
+              
+            document.getElementById("btnSobre").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#D8D8D8";
+            }
+
+
+            document.getElementById("btnSobre").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#A4A4A4";
+            }
+
+            
+            document.getElementById("btnSobre2").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#D8D8D8";
+            }
+
+            document.getElementById("btnSobre2").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#A4A4A4";
+            }
+
+            
+            document.getElementById("btnSobre3").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#D8D8D8";
+            }
+
+            document.getElementById("btnSobre3").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#A4A4A4";
+            }
+
+            
+            document.getElementById("btnSobre4").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#D8D8D8";
+            }
+
+            document.getElementById("btnSobre4").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#A4A4A4";
+            }
 
             fOurT = false;
 
