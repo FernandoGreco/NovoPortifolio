@@ -100,25 +100,127 @@ function menu(){
             document.getElementById("inicio").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
             
+            document.getElementById("ruby").style.backgroundColor = 'white';
             document.getElementById("sass").style.backgroundColor = 'white';
             document.getElementById("bootstrap").style.backgroundColor = 'white';
             document.getElementById("sobre").style.backgroundColor = 'white';
             document.getElementById("fundoCursos").style.backgroundColor = 'white';
             document.getElementById("txtSobre").style.color = '#6E6E6E';
             document.getElementById("txtBtn").style.color = '#6E6E6E';
+            document.getElementById("txtEmail").style.color = '#FF8C00';
+            document.getElementById("svgCarta").style.fill = '#F0E68C';
+
             document.getElementById("txtBtn").style.backgroundColor = 'white';
             document.getElementById("txtBtn2").style.color = '#6E6E6E';
             document.getElementById("txtBtn3").style.color = '#6E6E6E';
             document.getElementById("txtBtn4").style.color = '#6E6E6E';
             document.getElementById("btnSobre").style.backgroundColor = 'white';
+
+            document.getElementById("tituloProjetos").style.color = 'black';
+            document.getElementById("tituloProjetos").style.backgroundColor = '#FAFAFA';
+            document.getElementById("tituloProjetos2").style.color = 'black';
+            document.getElementById("tituloProjetos2").style.backgroundColor = '#FAFAFA';
+            document.getElementById("tituloProjetos3").style.color = 'black';
+            document.getElementById("tituloProjetos3").style.backgroundColor = '#FAFAFA';
+            document.getElementById("tituloProjetos4").style.color = 'black';
+            document.getElementById("tituloProjetos4").style.backgroundColor = '#FAFAFA';
+            document.getElementById("tituloProjetos5").style.color = 'black';
+            document.getElementById("tituloProjetos5").style.backgroundColor = '#FAFAFA';
+            document.getElementById("tituloProjetos6").style.color = 'black';
+            document.getElementById("tituloProjetos6").style.backgroundColor = '#FAFAFA';
+            
             document.getElementById("btnSobre2").style.backgroundColor = 'white';
             document.getElementById("btnSobre3").style.backgroundColor = 'white';
             document.getElementById("btnSobre4").style.backgroundColor = 'white';
+            document.getElementById("btnProj").style.backgroundColor = 'white';
+            document.getElementById("btnProj2").style.backgroundColor = 'white';
+            document.getElementById("btnProj3").style.backgroundColor = 'white';
+            document.getElementById("btnProj4").style.backgroundColor = 'white';
+            document.getElementById("btnProj5").style.backgroundColor = 'white';
+            
+
+            document.getElementById("tituloProjetos").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
 
 
-
-
+            document.getElementById("tituloProjetos").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
            
+            document.getElementById("tituloProjetos2").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
+
+
+            document.getElementById("tituloProjetos2").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
+           
+            document.getElementById("tituloProjetos3").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
+
+
+            document.getElementById("tituloProjetos3").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
+           
+            document.getElementById("tituloProjetos4").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
+
+
+            document.getElementById("tituloProjetos4").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
+           
+            document.getElementById("tituloProjetos5").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
+
+
+            document.getElementById("tituloProjetos5").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
+           
+            document.getElementById("tituloProjetos6").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#F5F5F5";
+         
+            }
+
+
+            document.getElementById("tituloProjetos6").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#FAFAFA";
+             
+            }
+           
+
+
+
+
 
              document.getElementsByTagName("LABEL")[0].onmouseover  = function() 
             {
@@ -253,6 +355,7 @@ function menu(){
 
 
             document.getElementById("inicio").style.backgroundColor = 'black';
+            document.getElementById("ruby").style.backgroundColor = 'black';
             document.getElementById("log").style.backgroundColor = 'white';
             document.getElementById("log").style.color = 'black';
             document.getElementById("lua").style.display = 'none';
@@ -271,12 +374,118 @@ function menu(){
             document.getElementById("txtBtn2").style.color = 'white';
             document.getElementById("txtBtn3").style.color = 'white';
             document.getElementById("txtBtn4").style.color = 'white';
+            document.getElementById("txtEmail").style.color = '#ADFF2F';
+            document.getElementById("svgCarta").style.fill = '#ADFF2F';
             document.getElementById("btnSobre").style.backgroundColor = '#A4A4A4';
             document.getElementById("btnSobre2").style.backgroundColor = '#A4A4A4';
             document.getElementById("btnSobre3").style.backgroundColor = '#A4A4A4';
             document.getElementById("btnSobre4").style.backgroundColor = '#A4A4A4';
+            
+            document.getElementById("btnProj").style.backgroundColor = 'gray';
+            document.getElementById("btnProj2").style.backgroundColor = 'gray';
+            document.getElementById("btnProj3").style.backgroundColor = 'gray';
+            document.getElementById("btnProj4").style.backgroundColor = 'gray';
+            document.getElementById("btnProj5").style.backgroundColor = 'gray';
 
               
+            
+            document.getElementById("tituloProjetos").style.color = 'white';
+            document.getElementById("tituloProjetos").style.backgroundColor = '#696969';
+            document.getElementById("tituloProjetos2").style.color = 'white';
+            document.getElementById("tituloProjetos2").style.backgroundColor = '#696969';
+            document.getElementById("tituloProjetos3").style.color = 'white';
+            document.getElementById("tituloProjetos3").style.backgroundColor = '#696969';
+            document.getElementById("tituloProjetos4").style.color = 'white';
+            document.getElementById("tituloProjetos4").style.backgroundColor = '#696969';
+            document.getElementById("tituloProjetos5").style.color = 'white';
+            document.getElementById("tituloProjetos5").style.backgroundColor = '#696969';
+            document.getElementById("tituloProjetos6").style.color = 'white';
+            document.getElementById("tituloProjetos6").style.backgroundColor = '#696969';
+
+            document.getElementById("tituloProjetos").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+            document.getElementById("tituloProjetos2").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos2").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+            document.getElementById("tituloProjetos3").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos3").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+            document.getElementById("tituloProjetos4").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos4").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+            document.getElementById("tituloProjetos5").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos5").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+            document.getElementById("tituloProjetos6").onmouseover  = function() 
+            {
+                this.style.backgroundColor = "#A9A9A9";
+                this.style.color = "black";
+            }
+
+
+            document.getElementById("tituloProjetos6").onmouseleave = function() 
+            {
+                this.style.backgroundColor = "#696969";
+                this.style.color = "white";
+            }
+
+
+
+
+
+
+
             document.getElementById("btnSobre").onmouseover  = function() 
             {
                 this.style.backgroundColor = "#D8D8D8";
