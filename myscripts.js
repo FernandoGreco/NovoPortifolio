@@ -83,7 +83,15 @@ function menu(){
     }
 
 
+    
+    function corFundo(id,cor){
+        document.getElementById(id).style.backgroundColor = cor;
+    }
+
+
     var fOurT = false;
+
+
     function luz(){
 
            //  var x = document.getElementById("inicio");
@@ -93,50 +101,46 @@ function menu(){
            let vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
 
            let vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
-            
+
+           let vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
+           "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
+
+           let vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
+           "tituloProjetos5","tituloProjetos6"];
+
+           for (var i = 0; i < vetorFundoBranco.length; i++) {
+              corFundo( vetorFundoBranco[i],"white");
+                           }
+
+            for (var i = 0; i < vetorTituloProjetos.length; i++) {
+                document.getElementById(vetorTituloProjetos[i]).style.color = 'black';
+                corFundo(vetorTituloProjetos[i],"#FAFAFA");
+                           }               
+
+                          
+                       
+
+
+
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
             document.getElementsByTagName("SPAN")[0].style.color = '#2250a0';
 
-            document.getElementById("inicio").style.backgroundColor = 'white';
+           
             document.getElementById("log").style.color = 'black';
-            
-            document.getElementById("ruby").style.backgroundColor = 'white';
-            document.getElementById("sass").style.backgroundColor = 'white';
-            document.getElementById("bootstrap").style.backgroundColor = 'white';
-            document.getElementById("sobre").style.backgroundColor = 'white';
-            document.getElementById("fundoCursos").style.backgroundColor = 'white';
+
             document.getElementById("txtSobre").style.color = '#6E6E6E';
             document.getElementById("txtBtn").style.color = '#6E6E6E';
             document.getElementById("txtEmail").style.color = '#FF8C00';
             document.getElementById("svgCarta").style.fill = '#F0E68C';
 
-            document.getElementById("txtBtn").style.backgroundColor = 'white';
             document.getElementById("txtBtn2").style.color = '#6E6E6E';
             document.getElementById("txtBtn3").style.color = '#6E6E6E';
             document.getElementById("txtBtn4").style.color = '#6E6E6E';
-            document.getElementById("btnSobre").style.backgroundColor = 'white';
+     
 
-            document.getElementById("tituloProjetos").style.color = 'black';
-            document.getElementById("tituloProjetos").style.backgroundColor = '#FAFAFA';
-            document.getElementById("tituloProjetos2").style.color = 'black';
-            document.getElementById("tituloProjetos2").style.backgroundColor = '#FAFAFA';
-            document.getElementById("tituloProjetos3").style.color = 'black';
-            document.getElementById("tituloProjetos3").style.backgroundColor = '#FAFAFA';
-            document.getElementById("tituloProjetos4").style.color = 'black';
-            document.getElementById("tituloProjetos4").style.backgroundColor = '#FAFAFA';
-            document.getElementById("tituloProjetos5").style.color = 'black';
-            document.getElementById("tituloProjetos5").style.backgroundColor = '#FAFAFA';
-            document.getElementById("tituloProjetos6").style.color = 'black';
-            document.getElementById("tituloProjetos6").style.backgroundColor = '#FAFAFA';
+        
             
-            document.getElementById("btnSobre2").style.backgroundColor = 'white';
-            document.getElementById("btnSobre3").style.backgroundColor = 'white';
-            document.getElementById("btnSobre4").style.backgroundColor = 'white';
-            document.getElementById("btnProj").style.backgroundColor = 'white';
-            document.getElementById("btnProj2").style.backgroundColor = 'white';
-            document.getElementById("btnProj3").style.backgroundColor = 'white';
-            document.getElementById("btnProj4").style.backgroundColor = 'white';
-            document.getElementById("btnProj5").style.backgroundColor = 'white';
+
             
 
             document.getElementById("tituloProjetos").onmouseover  = function() 
@@ -291,7 +295,7 @@ function menu(){
 
 
             for (var i = 0; i < vetorMenu.length; i++) {
-                document.getElementById(vetorMenu[i]).style.color = 'black';
+                document.getElementById(vetorMenu[i]).style.color = '#4B0082';
                 document.getElementById(vetorMenu[i]).style.backgroundColor = 'white';
               }
 
@@ -347,10 +351,10 @@ function menu(){
             document.getElementById("iconeMenu2").style.backgroundColor= 'yellow';
             document.getElementById("iconeMenu3").style.backgroundColor= 'yellow';
             document.getElementById("sass").style.backgroundColor = 'gray';
-            document.getElementById("menus").style.backgroundColor = 'gray';
-            document.getElementById("menus2").style.backgroundColor = 'gray';
-            document.getElementById("menus3").style.backgroundColor = 'gray';
-            document.getElementById("menus4").style.backgroundColor = 'gray';
+            document.getElementById("menus").style.backgroundColor = 'rgba(255,255,255,.2)';
+            document.getElementById("menus2").style.backgroundColor = 'rgba(255,255,255,.2)';
+            document.getElementById("menus3").style.backgroundColor = 'rgba(255,255,255,.2)';
+            document.getElementById("menus4").style.backgroundColor = 'rgba(255,255,255,.2)';
 
 
 
@@ -534,43 +538,43 @@ function menu(){
 
             document.getElementById("menus").onmouseover  = function() 
 {
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
+    this.style.backgroundColor = "gray";
 }
 
  document.getElementById("menus").onmouseleave = function() 
 {
-    this.style.backgroundColor = "gray";
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
 
 
 document.getElementById("menus2").onmouseover  = function() 
 {
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
+    this.style.backgroundColor = "gray";
 }
 
  document.getElementById("menus2").onmouseleave = function() 
 {
-    this.style.backgroundColor = "gray";
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
 
 document.getElementById("menus3").onmouseover  = function() 
 {
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
+    this.style.backgroundColor = "gray";
 }
 
  document.getElementById("menus3").onmouseleave = function() 
 {
-    this.style.backgroundColor = "gray";
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
 
             document.getElementById("menus4").onmouseover  = function() 
 {
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
+    this.style.backgroundColor = "gray";
 }
 
  document.getElementById("menus4").onmouseleave = function() 
 {
-    this.style.backgroundColor = "none";
+    this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
 
         }
