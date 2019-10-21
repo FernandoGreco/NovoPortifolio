@@ -50,6 +50,9 @@ rodape(textos);
  
  // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
 
+ var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+
+
 function menu(){
 
     var x = document.getElementById("menus");
@@ -58,7 +61,8 @@ function menu(){
     
     console.log(document.getElementById("menus"));
     if(x.style.display === "none"){
-      document.getElementById("menus").style.display = 'inline-block';
+
+      
       document.getElementById("menus2").style.display = 'inline-block';
       document.getElementById("menus3").style.display = 'inline-block';
       document.getElementById("menus4").style.display = 'inline-block';
@@ -69,7 +73,8 @@ function menu(){
     
     }
     else{
-      document.getElementById("menus").style.display = 'none';
+
+         document.getElementById("menus").style.display = 'none';
         document.getElementById("menus2").style.display = 'none';
         document.getElementById("menus3").style.display = 'none';
       document.getElementById("menus4").style.display = 'none';
@@ -98,7 +103,7 @@ function menu(){
         if( fOurT === false){
            fOurT = true;
 
-           let vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+           
 
            let vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
 
