@@ -413,6 +413,24 @@ function menu(){
             document.getElementById("tituloProjetos6").style.color = 'white';
             document.getElementById("tituloProjetos6").style.backgroundColor = '#696969';
 
+           // document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
+           // document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
+
+
+            document.getElementsByTagName("LABEL")[0].onmouseover  = function() 
+            {
+                this.style.backgroundColor = "rgba(255,255,255,.2)";
+                this.style.color = "black";
+            }
+
+
+            document.getElementsByTagName("LABEL")[0].onmouseleave = function() 
+            {
+                this.style.backgroundColor = "black";
+                this.style.color = "white";
+            }
+
+
             document.getElementById("tituloProjetos").onmouseover  = function() 
             {
                 this.style.backgroundColor = "#A9A9A9";
@@ -541,7 +559,7 @@ function menu(){
                 this.style.backgroundColor = "#A4A4A4";
             }
 
-            fOurT = false;
+         
 
             document.getElementById("menus").onmouseover  = function() 
 {
@@ -583,6 +601,11 @@ document.getElementById("menus3").onmouseover  = function()
 {
     this.style.backgroundColor = "rgba(255,255,255,.2)";
 }
+
+
+
+
+fOurT = false;
 
         }
       }
