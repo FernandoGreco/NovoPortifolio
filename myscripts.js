@@ -88,45 +88,37 @@ function menu(){
         document.getElementById(id).style.backgroundColor = cor;
     }
 
+    var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
+    "tituloProjetos5","tituloProjetos6"];
+
+    var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+
+    var vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
+
+    var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
+    "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
+
 
     var fOurT = false;
-
-
+  
     function luz(){
 
            //  var x = document.getElementById("inicio");
         if( fOurT === false){
            fOurT = true;
 
-           let vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+          
 
-           let vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
-
-           let vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
-           "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
-
-           let vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
-           "tituloProjetos5","tituloProjetos6"];
+         
 
            for (var i = 0; i < vetorFundoBranco.length; i++) {
               corFundo( vetorFundoBranco[i],"white");
                            }
 
-                           
-
-                           document.getElementById("tituloProjetos").style.color = 'black';
-                           document.getElementById("tituloProjetos").style.backgroundColor = '#FAFAFA';
-                           document.getElementById("tituloProjetos2").style.color = 'black';
-                           document.getElementById("tituloProjetos2").style.backgroundColor = '#FAFAFA';
-                           document.getElementById("tituloProjetos3").style.color = 'black';
-                           document.getElementById("tituloProjetos3").style.backgroundColor = '#FAFAFA';
-                           document.getElementById("tituloProjetos4").style.color = 'black';
-                           document.getElementById("tituloProjetos4").style.backgroundColor = '#FAFAFA';
-                           document.getElementById("tituloProjetos5").style.color = 'black';
-                           document.getElementById("tituloProjetos5").style.backgroundColor = '#FAFAFA';
-                           document.getElementById("tituloProjetos6").style.color = 'black';
-                           document.getElementById("tituloProjetos6").style.backgroundColor = '#FAFAFA';
-
+                           for (var i = 0; i < vetorTituloProjetos.length; i++) {
+                            document.getElementById(vetorTituloProjetos[i]).style.color = 'black';
+                            document.getElementById(vetorTituloProjetos[i]).style.backgroundColor = '#FAFAFA';
+                                         }                
 
 
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
@@ -354,9 +346,14 @@ function menu(){
         {
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
             document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
-            document.getElementById("iconeMenu").style.backgroundColor= 'yellow';
-            document.getElementById("iconeMenu2").style.backgroundColor= 'yellow';
-            document.getElementById("iconeMenu3").style.backgroundColor= 'yellow';
+
+  
+
+            for (var i = 0; i < vetorIconeMenu.length; i++) {
+                   document.getElementById(vetorIconeMenu[i]).style.backgroundColor = 'yellow';
+                             }  
+                             
+       
             document.getElementById("sass").style.backgroundColor = 'gray';
             document.getElementById("menus").style.backgroundColor = 'rgba(255,255,255,.2)';
             document.getElementById("menus2").style.backgroundColor = 'rgba(255,255,255,.2)';
@@ -398,20 +395,11 @@ function menu(){
             document.getElementById("btnProj4").style.backgroundColor = 'gray';
             document.getElementById("btnProj5").style.backgroundColor = 'gray';
 
-              
+            for (var i = 0; i < vetorTituloProjetos.length; i++) {
+                document.getElementById(vetorTituloProjetos[i]).style.color = 'white';
+                document.getElementById(vetorTituloProjetos[i]).style.backgroundColor = '#696969';
+                             }     
             
-            document.getElementById("tituloProjetos").style.color = 'white';
-            document.getElementById("tituloProjetos").style.backgroundColor = '#696969';
-            document.getElementById("tituloProjetos2").style.color = 'white';
-            document.getElementById("tituloProjetos2").style.backgroundColor = '#696969';
-            document.getElementById("tituloProjetos3").style.color = 'white';
-            document.getElementById("tituloProjetos3").style.backgroundColor = '#696969';
-            document.getElementById("tituloProjetos4").style.color = 'white';
-            document.getElementById("tituloProjetos4").style.backgroundColor = '#696969';
-            document.getElementById("tituloProjetos5").style.color = 'white';
-            document.getElementById("tituloProjetos5").style.backgroundColor = '#696969';
-            document.getElementById("tituloProjetos6").style.color = 'white';
-            document.getElementById("tituloProjetos6").style.backgroundColor = '#696969';
 
            // document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
            // document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
