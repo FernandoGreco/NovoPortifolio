@@ -46,6 +46,7 @@ display: none;
     height: 50px;
     position: fixed;
     display: flex;
+    z-index: 50;
   }
   .btn{
     background-color: #A4A4A4;

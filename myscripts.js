@@ -88,6 +88,7 @@ function menu(){
         document.getElementById(id).style.backgroundColor = cor;
     }
 
+    
     var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
     "tituloProjetos5","tituloProjetos6"];
 
@@ -97,7 +98,6 @@ function menu(){
 
     var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
     "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
-
 
     var fOurT = false;
   
@@ -124,8 +124,14 @@ function menu(){
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
             document.getElementsByTagName("SPAN")[0].style.color = '#2250a0';
 
-           
+                  
             document.getElementById("log").style.color = 'black';
+
+            document.getElementById("btnProjetos").style.color = 'black';
+            document.getElementById("btnProjetos").style.backgroundColor = 'white';
+            document.getElementById("btnProjetos").style.borderWidth = '0.5px';
+            document.getElementById("btnProjetos").style.borderStyle = 'dashed';
+            document.getElementById("btnProjetos").style.borderColor = 'gray';
 
             document.getElementById("txtSobre").style.color = '#6E6E6E';
             document.getElementById("txtBtn").style.color = '#6E6E6E';
@@ -140,7 +146,23 @@ function menu(){
         
             
 
-            
+            document.getElementById("btnProjetos").onmouseover  = function() 
+            {
+               
+            document.getElementById("btnProjetos").style.color = 'gray';
+            document.getElementById("btnProjetos").style.backgroundColor = 'A9A9A9';
+            document.getElementById("btnProjetos").style.borderColor = 'gray';
+                                     }
+
+
+            document.getElementById("btnProjetos").onmouseleave = function() 
+            {
+               document.getElementById("btnProjetos").style.color = 'black';
+            document.getElementById("btnProjetos").style.backgroundColor = 'white';
+              document.getElementById("btnProjetos").style.borderColor = '#A9A9A9';
+            }
+
+
 
             document.getElementById("tituloProjetos").onmouseover  = function() 
             {
@@ -347,7 +369,7 @@ function menu(){
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
             document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
 
-  
+         
 
             for (var i = 0; i < vetorIconeMenu.length; i++) {
                    document.getElementById(vetorIconeMenu[i]).style.backgroundColor = 'yellow';
@@ -401,8 +423,27 @@ function menu(){
                              }     
             
 
-           // document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
-           // document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
+                             document.getElementById("btnProjetos").style.color = 'white';
+                             document.getElementById("btnProjetos").style.backgroundColor = 'gray';
+                             document.getElementById("btnProjetos").style.borderWidth = '0.5px';
+                             document.getElementById("btnProjetos").style.borderStyle = 'solid';
+                             document.getElementById("btnProjetos").style.borderColor = 'white';
+
+                             document.getElementById("btnProjetos").onmouseover  = function() 
+                             {
+                                
+                             document.getElementById("btnProjetos").style.color = 'black';
+                             document.getElementById("btnProjetos").style.backgroundColor = '#A9A9A9';
+                             document.getElementById("btnProjetos").style.borderColor = 'gray';
+                                                      }
+                 
+                 
+                             document.getElementById("btnProjetos").onmouseleave = function() 
+                             {
+                                document.getElementById("btnProjetos").style.color = 'white';
+                             document.getElementById("btnProjetos").style.backgroundColor = 'gray';
+                               document.getElementById("btnProjetos").style.borderColor = 'white';
+                             }
 
 
             document.getElementsByTagName("LABEL")[0].onmouseover  = function() 
