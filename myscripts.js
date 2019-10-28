@@ -48,34 +48,49 @@ function rodape(conteudos, el) {
 rodape(textos);
 
  
+
  // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
+
+ var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
+ "tituloProjetos5","tituloProjetos6"];
+
+ var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+
+ var vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
+
+ var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
+ "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
+
+
 
 function menu(){
 
     var x = document.getElementById("menus");
     
-    
-    
+ 
     console.log(document.getElementById("menus"));
     if(x.style.display === "none"){
-      document.getElementById("menus").style.display = 'inline-block';
-      document.getElementById("menus2").style.display = 'inline-block';
-      document.getElementById("menus3").style.display = 'inline-block';
-      document.getElementById("menus4").style.display = 'inline-block';
-      document.getElementById("iconeMenu").style.display= 'none';
-      document.getElementById("iconeMenu2").style.display= 'none';
-      document.getElementById("iconeMenu3").style.display= 'none';
+
+        
+        for (var i = 0; i < vetorMenu.length; i++) {
+            document.getElementById(vetorMenu[i]).style.display = 'inline-block';
+                         }     
+  
+        for (var i = 0; i < vetorIconeMenu.length; i++) {
+            document.getElementById(vetorIconeMenu[i]).style.display = 'none';
+                        }                              
       document.getElementById("x").style.display= 'inline-block';
     
     }
     else{
-      document.getElementById("menus").style.display = 'none';
-        document.getElementById("menus2").style.display = 'none';
-        document.getElementById("menus3").style.display = 'none';
-      document.getElementById("menus4").style.display = 'none';
-        document.getElementById("iconeMenu").style.display= 'inherit';
-      document.getElementById("iconeMenu2").style.display= 'inherit';
-      document.getElementById("iconeMenu3").style.display= 'inherit';
+        for (var i = 0; i < vetorMenu.length; i++) {
+            document.getElementById(vetorMenu[i]).style.display = 'none';
+                         } 
+                         
+         for (var i = 0; i < vetorIconeMenu.length; i++) {
+           document.getElementById(vetorIconeMenu[i]).style.display = 'inherit';
+                     }                  
+
       document.getElementById("x").style.display= 'none';
     }
     
@@ -89,16 +104,7 @@ function menu(){
     }
 
     
-    var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
-    "tituloProjetos5","tituloProjetos6"];
-
-    var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
-
-    var vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
-
-    var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
-    "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
-
+ 
     var fOurT = false;
   
     function luz(){
@@ -124,8 +130,10 @@ function menu(){
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'white';
             document.getElementsByTagName("SPAN")[0].style.color = '#2250a0';
 
-                  
+            
             document.getElementById("log").style.color = 'black';
+
+            document.getElementById("iconeGit").style.fill = 'black';
 
             document.getElementById("btnProjetos").style.color = 'black';
             document.getElementById("btnProjetos").style.backgroundColor = 'white';
@@ -369,7 +377,7 @@ function menu(){
             document.getElementsByTagName("LABEL")[0].style.backgroundColor = 'black';
             document.getElementsByTagName("SPAN")[0].style.color = 'yellow';
 
-         
+            document.getElementById("iconeGit").style.fill = 'white';
 
             for (var i = 0; i < vetorIconeMenu.length; i++) {
                    document.getElementById(vetorIconeMenu[i]).style.backgroundColor = 'yellow';
@@ -377,10 +385,12 @@ function menu(){
                              
        
             document.getElementById("sass").style.backgroundColor = 'gray';
-            document.getElementById("menus").style.backgroundColor = 'rgba(255,255,255,.2)';
-            document.getElementById("menus2").style.backgroundColor = 'rgba(255,255,255,.2)';
-            document.getElementById("menus3").style.backgroundColor = 'rgba(255,255,255,.2)';
-            document.getElementById("menus4").style.backgroundColor = 'rgba(255,255,255,.2)';
+
+            for (var i = 0; i < vetorMenu.length; i++) {
+                document.getElementById(vetorMenu[i]).style.backgroundColor = 'rgba(255,255,255,.2)';
+                document.getElementById(vetorMenu[i]).style.color = 'white';
+                             }   
+   
 
 
 
@@ -390,10 +400,6 @@ function menu(){
             document.getElementById("log").style.color = 'black';
             document.getElementById("lua").style.display = 'none';
             document.getElementById("luz").style.display = 'inherit';
-            document.getElementById("menus").style.color = 'white';
-            document.getElementById("menus2").style.color = 'white';
-            document.getElementById("menus3").style.color = 'white';
-            document.getElementById("menus4").style.color = 'white';
             
             document.getElementById("bootstrap").style.backgroundColor = 'gray';
             document.getElementById("sobre").style.backgroundColor = 'gray';
