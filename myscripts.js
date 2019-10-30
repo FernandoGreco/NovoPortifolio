@@ -61,7 +61,11 @@ rodape(textos);
  var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
  "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
 
+ var vetorTxtBtn = ["txtBtn","txtBtn2","txtBtn3","txtBtn4"];
 
+ var vetorBtnSobre = ["btnSobre", "btnSobre2","btnSobre3","btnSobre4"];
+
+ var vetorBtnProjetos = ["btnProj","btnProj2","btnProj3","btnProj4","btnProj5"]; 
 
 function menu(){
 
@@ -103,6 +107,10 @@ function menu(){
         document.getElementById(id).style.backgroundColor = cor;
     }
 
+      function corTxt(id,cor){
+        document.getElementById(id).style.color = cor;
+    }
+
     
  
     var fOurT = false;
@@ -142,17 +150,17 @@ function menu(){
             document.getElementById("btnProjetos").style.borderColor = 'gray';
 
             document.getElementById("txtSobre").style.color = '#6E6E6E';
-            document.getElementById("txtBtn").style.color = '#6E6E6E';
+            
             document.getElementById("txtEmail").style.color = '#FF8C00';
             document.getElementById("svgCarta").style.fill = '#F0E68C';
 
-            document.getElementById("txtBtn2").style.color = '#6E6E6E';
-            document.getElementById("txtBtn3").style.color = '#6E6E6E';
-            document.getElementById("txtBtn4").style.color = '#6E6E6E';
-     
 
-        
-            
+           for (var i = 0; i < vetorTxtBtn.length; i++) {
+              corTxt( vetorTxtBtn[i],"#6E6E6E");
+                           }
+
+
+
 
             document.getElementById("btnProjetos").onmouseover  = function() 
             {
@@ -267,15 +275,22 @@ function menu(){
 
             }
 
-            document.getElementById("btnSobre").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#E0FFFF";
-            }
 
-            document.getElementById("btnSobre").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "white";
-            }
+            document.getElementById("btnSobre").onmouseover = function() {mouseOver()};
+            document.getElementById("btnSobre").onmouseout = function() {mouseOut()};
+
+
+                          function mouseOver() {
+                document.getElementById("btnSobre").style.backgroundColor = "#E0FFFF";
+              }
+
+              function mouseOut() {
+                document.getElementById("btnSobre").style.backgroundColor = "white";
+}
+
+
+
+
 
             
             document.getElementById("btnSobre2").onmouseover  = function() 
@@ -405,23 +420,27 @@ function menu(){
             document.getElementById("sobre").style.backgroundColor = 'gray';
             document.getElementById("fundoCursos").style.backgroundColor = 'gray';
             document.getElementById("txtSobre").style.color = 'white';
-            document.getElementById("txtBtn").style.color = 'white';
+        
             document.getElementById("txtBtn").style.backgroundColor = 'gray';
-            document.getElementById("txtBtn2").style.color = 'white';
-            document.getElementById("txtBtn3").style.color = 'white';
-            document.getElementById("txtBtn4").style.color = 'white';
+
+
+
+for (var i = 0; i < vetorTxtBtn.length; i++) {
+              corTxt( vetorTxtBtn[i],"white");
+                           }
+
             document.getElementById("txtEmail").style.color = '#ADFF2F';
             document.getElementById("svgCarta").style.fill = '#ADFF2F';
-            document.getElementById("btnSobre").style.backgroundColor = '#A4A4A4';
-            document.getElementById("btnSobre2").style.backgroundColor = '#A4A4A4';
-            document.getElementById("btnSobre3").style.backgroundColor = '#A4A4A4';
-            document.getElementById("btnSobre4").style.backgroundColor = '#A4A4A4';
+
             
-            document.getElementById("btnProj").style.backgroundColor = 'gray';
-            document.getElementById("btnProj2").style.backgroundColor = 'gray';
-            document.getElementById("btnProj3").style.backgroundColor = 'gray';
-            document.getElementById("btnProj4").style.backgroundColor = 'gray';
-            document.getElementById("btnProj5").style.backgroundColor = 'gray';
+              for (var i = 0; i < vetorBtnSobre.length; i++) {
+              corFundo( vetorBtnSobre[i],"#A4A4A4");
+                           }
+
+            for (var i = 0; i < vetorBtnProjetos.length; i++) {
+               corFundo( vetorBtnProjetos[i],"gray");
+                           }
+
 
             for (var i = 0; i < vetorTituloProjetos.length; i++) {
                 document.getElementById(vetorTituloProjetos[i]).style.color = 'white';
