@@ -47,25 +47,7 @@ function rodape(conteudos, el) {
 
 rodape(textos);
 
- 
 
- // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
-
- var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
- "tituloProjetos5","tituloProjetos6"];
-
- var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
-
- var vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
-
- var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
- "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
-
- var vetorTxtBtn = ["txtBtn","txtBtn2","txtBtn3","txtBtn4"];
-
- var vetorBtnSobre = ["btnSobre", "btnSobre2","btnSobre3","btnSobre4"];
-
- var vetorBtnProjetos = ["btnProj","btnProj2","btnProj3","btnProj4","btnProj5"]; 
 
 function menu(){
 
@@ -101,6 +83,48 @@ function menu(){
     
     }
 
+ 
+
+ // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
+
+ var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
+ "tituloProjetos5","tituloProjetos6"];
+
+ var vetorMenu = ["menus", "menus2", "menus3", "menus4" ];
+
+ var vetorIconeMenu = ["iconeMenu","iconeMenu2","iconeMenu3"];
+
+ var vetorFundoBranco = ["inicio","ruby","sass","bootstrap","sobre","fundoCursos","btnSobre",
+ "btnSobre2","btnSobre3","btnSobre4","txtBtn","btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
+
+ var vetorTxtBtn = ["txtBtn","txtBtn2","txtBtn3","txtBtn4"];
+
+
+
+ var vetorBtnSobre = ["btnSobre", "btnSobre2","btnSobre3","btnSobre4"];
+
+
+
+//vetores com ids 
+var btnSbr = [];
+var menuIds = [];
+var tituloProjeId = [];
+
+  for (var i = 0; i < vetorBtnSobre.length; i++) {
+      btnSbr.push(document.getElementById(vetorBtnSobre[i]));
+                         }  
+
+    for (var i = 0; i < vetorMenu.length; i++) {
+      menuIds.push(document.getElementById(vetorMenu[i]));
+                         }  
+
+     for (var i = 0; i < vetorTituloProjetos.length; i++) {
+      tituloProjeId.push(document.getElementById(vetorTituloProjetos[i]));
+                         }                                             
+            
+  
+ var vetorBtnProjetos = ["btnProj","btnProj2","btnProj3","btnProj4","btnProj5"]; 
+
 
     
     function corFundo(id,cor){
@@ -112,6 +136,58 @@ function menu(){
     }
 
     
+      function mouseOver(cor,propriedadeCss,indice) {
+
+                       switch (propriedadeCss) {
+                 
+                      case 'botaoSobre':
+                          btnSbr[indice].style.backgroundColor = cor;   
+                          break;
+                    
+
+                    case 'menu':
+                          menuIds[indice].style.backgroundColor = cor;   
+                          break;
+
+                    case 'tituloProjetos':
+                          tituloProjeId[indice].style.backgroundColor = cor;   
+                          break;      
+
+                    case 'tituloProjetosLua':
+                          tituloProjeId[indice].style.backgroundColor = cor;
+                          tituloProjeId[indice].style.color = 'black';   
+                          break;       
+                    
+}
+              }
+
+
+
+
+              function mouseOut(cor,propriedadeCss,indice) {
+                      switch (propriedadeCss) {
+                 
+                      case 'botaoSobre':
+                           btnSbr[indice].style.backgroundColor = cor;
+            
+                          break;
+
+                      case 'menu':
+                          menuIds[indice].style.backgroundColor = cor;   
+                          break;    
+
+                      case 'tituloProjetos':
+                          tituloProjeId[indice].style.backgroundColor = cor;   
+                          break;  
+
+                      case 'tituloProjetosLua':
+                          tituloProjeId[indice].style.backgroundColor = cor;
+                          tituloProjeId[indice].style.color = 'white';      
+                          break;          
+                    }
+
+              }
+
  
     var fOurT = false;
   
@@ -180,87 +256,19 @@ function menu(){
 
 
 
-            document.getElementById("tituloProjetos").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
 
-
-            document.getElementById("tituloProjetos").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-            document.getElementById("tituloProjetos2").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
-
-
-            document.getElementById("tituloProjetos2").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-            document.getElementById("tituloProjetos3").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
-
-
-            document.getElementById("tituloProjetos3").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-            document.getElementById("tituloProjetos4").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
-
-
-            document.getElementById("tituloProjetos4").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-            document.getElementById("tituloProjetos5").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
-
-
-            document.getElementById("tituloProjetos5").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-            document.getElementById("tituloProjetos6").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#F5F5F5";
-         
-            }
-
-
-            document.getElementById("tituloProjetos6").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#FAFAFA";
-             
-            }
-           
-
-
-
+             tituloProjeId[0].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',0)};
+             tituloProjeId[0].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',0)};
+              tituloProjeId[1].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',1)};
+             tituloProjeId[1].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',1)};
+              tituloProjeId[2].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',2)};
+             tituloProjeId[2].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',2)};
+              tituloProjeId[3].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',3)};
+             tituloProjeId[3].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',3)};
+              tituloProjeId[4].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',4)};
+             tituloProjeId[4].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',4)};
+              tituloProjeId[5].onmouseover = function() {mouseOver('#F5F5F5','tituloProjetos',5)};
+             tituloProjeId[5].onmouseout = function() {mouseOut('#FAFAFA','tituloProjetos',5)};
 
 
              document.getElementsByTagName("LABEL")[0].onmouseover  = function() 
@@ -275,59 +283,20 @@ function menu(){
 
             }
 
-
-            document.getElementById("btnSobre").onmouseover = function() {mouseOver()};
-            document.getElementById("btnSobre").onmouseout = function() {mouseOut()};
-
-
-                          function mouseOver() {
-                document.getElementById("btnSobre").style.backgroundColor = "#E0FFFF";
-              }
-
-              function mouseOut() {
-                document.getElementById("btnSobre").style.backgroundColor = "white";
-}
-
-
-
-
-
             
-            document.getElementById("btnSobre2").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#E0FFFF";
-            }
 
-            document.getElementById("btnSobre2").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "white";
-            }
+ 
 
-            
-            document.getElementById("btnSobre3").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#E0FFFF";
-            }
+            btnSbr[0].onmouseover = function() {mouseOver('#E0FFFF','botaoSobre',0)};
+            btnSbr[0].onmouseout = function() {mouseOut('white','botaoSobre',0)};
+            btnSbr[1].onmouseover = function() {mouseOver('#E0FFFF','botaoSobre',1)};
+            btnSbr[1].onmouseout = function() {mouseOut('white','botaoSobre',1)};
+            btnSbr[2].onmouseover = function() {mouseOver('#E0FFFF','botaoSobre',2)};
+            btnSbr[2].onmouseout = function() {mouseOut('white','botaoSobre',2)};
+            btnSbr[3].onmouseover = function() {mouseOver('#E0FFFF','botaoSobre',3)};
+            btnSbr[3].onmouseout = function() {mouseOut('white','botaoSobre',3)};
 
-            document.getElementById("btnSobre3").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "white";
-            }
-
-            
-            document.getElementById("btnSobre4").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#E0FFFF";
-            }
-
-            document.getElementById("btnSobre4").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "white";
-            }
-
-
-
-         //   document.getElementById("log").style.color = 'black';
+           
 
             document.getElementById("lua").style.display = 'inherit';
             document.getElementById("luz").style.display = 'none';
@@ -343,49 +312,19 @@ function menu(){
                 document.getElementById(vetorMenu[i]).style.backgroundColor = 'white';
               }
 
-              document.getElementById("menus").onmouseover  = function() 
-              {
-                  this.style.backgroundColor = "#E0FFFF";
-              }
-              
-               document.getElementById("menus").onmouseleave = function() 
-              {
-                  this.style.backgroundColor = "white";
-              }
 
 
-              document.getElementById("menus2").onmouseover  = function() 
-              {
-                  this.style.backgroundColor = "#E0FFFF";
-              }
-              
-               document.getElementById("menus2").onmouseleave = function() 
-              {
-                  this.style.backgroundColor = "white";
-              }
 
+              menuIds[0].onmouseover = function() {mouseOver('#E0FFFF','menu',0)};
+              menuIds[0].onmouseout = function() {mouseOut('white','menu',0)};
+              menuIds[1].onmouseover = function() {mouseOver('#E0FFFF','menu',1)};
+              menuIds[1].onmouseout = function() {mouseOut('white','menu',1)};
+              menuIds[2].onmouseover = function() {mouseOver('#E0FFFF','menu',2)};
+              menuIds[2].onmouseout = function() {mouseOut('white','menu',2)};
+              menuIds[3].onmouseover = function() {mouseOver('#E0FFFF','menu',3)};
+              menuIds[3].onmouseout = function() {mouseOut('white','menu',3)};
 
-              document.getElementById("menus3").onmouseover  = function() 
-              {
-                  this.style.backgroundColor = "#E0FFFF";
-              }
-              
-               document.getElementById("menus3").onmouseleave = function() 
-              {
-                  this.style.backgroundColor = "white";
-              }
-
-              document.getElementById("menus4").onmouseover  = function() 
-              {
-                  this.style.backgroundColor = "#E0FFFF";
-              }
-
- document.getElementById("menus4").onmouseleave = function() 
-{
-    this.style.backgroundColor = "white";
-}
-           
-                    }
+         }
      
         else
         {
@@ -485,178 +424,38 @@ for (var i = 0; i < vetorTxtBtn.length; i++) {
             }
 
 
-            document.getElementById("tituloProjetos").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
+            tituloProjeId[0].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',0)};
+            tituloProjeId[0].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',0)};
+            tituloProjeId[1].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',1)};
+            tituloProjeId[1].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',1)};
+            tituloProjeId[2].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',2)};
+            tituloProjeId[2].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',2)};
+            tituloProjeId[3].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',3)};
+            tituloProjeId[3].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',3)};
+            tituloProjeId[4].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',4)};
+            tituloProjeId[4].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',4)};
+            tituloProjeId[5].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',5)};
+            tituloProjeId[5].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',5)};
+       
+
+            btnSbr[0].onmouseover = function() {mouseOver('#D8D8D8','corFundo',0)};
+            btnSbr[0].onmouseout = function() {mouseOut('#A4A4A4','corFundo',0)};
+            btnSbr[1].onmouseover = function() {mouseOver('#D8D8D8','corFundo',1)};
+            btnSbr[1].onmouseout = function() {mouseOut('#A4A4A4','corFundo',1)};
+            btnSbr[2].onmouseover = function() {mouseOver('#D8D8D8','corFundo',2)};
+            btnSbr[2].onmouseout = function() {mouseOut('#A4A4A4','corFundo',2)};
+            btnSbr[3].onmouseover = function() {mouseOver('#D8D8D8','corFundo',3)};
+            btnSbr[3].onmouseout = function() {mouseOut('#A4A4A4','corFundo',3)};
 
 
-            document.getElementById("tituloProjetos").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-            document.getElementById("tituloProjetos2").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
-
-
-            document.getElementById("tituloProjetos2").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-            document.getElementById("tituloProjetos3").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
-
-
-            document.getElementById("tituloProjetos3").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-            document.getElementById("tituloProjetos4").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
-
-
-            document.getElementById("tituloProjetos4").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-            document.getElementById("tituloProjetos5").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
-
-
-            document.getElementById("tituloProjetos5").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-            document.getElementById("tituloProjetos6").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#A9A9A9";
-                this.style.color = "black";
-            }
-
-
-            document.getElementById("tituloProjetos6").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#696969";
-                this.style.color = "white";
-            }
-
-
-
-
-
-
-
-            document.getElementById("btnSobre").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#D8D8D8";
-            }
-
-
-            document.getElementById("btnSobre").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#A4A4A4";
-            }
-
-            
-            document.getElementById("btnSobre2").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#D8D8D8";
-            }
-
-            document.getElementById("btnSobre2").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#A4A4A4";
-            }
-
-            
-            document.getElementById("btnSobre3").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#D8D8D8";
-            }
-
-            document.getElementById("btnSobre3").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#A4A4A4";
-            }
-
-            
-            document.getElementById("btnSobre4").onmouseover  = function() 
-            {
-                this.style.backgroundColor = "#D8D8D8";
-            }
-
-            document.getElementById("btnSobre4").onmouseleave = function() 
-            {
-                this.style.backgroundColor = "#A4A4A4";
-            }
-
-         
-
-            document.getElementById("menus").onmouseover  = function() 
-{
-    this.style.backgroundColor = "gray";
-}
-
- document.getElementById("menus").onmouseleave = function() 
-{
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
-}
-
-
-document.getElementById("menus2").onmouseover  = function() 
-{
-    this.style.backgroundColor = "gray";
-}
-
- document.getElementById("menus2").onmouseleave = function() 
-{
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
-}
-
-document.getElementById("menus3").onmouseover  = function() 
-{
-    this.style.backgroundColor = "gray";
-}
-
- document.getElementById("menus3").onmouseleave = function() 
-{
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
-}
-
-            document.getElementById("menus4").onmouseover  = function() 
-{
-    this.style.backgroundColor = "gray";
-}
-
- document.getElementById("menus4").onmouseleave = function() 
-{
-    this.style.backgroundColor = "rgba(255,255,255,.2)";
-}
-
-
+              menuIds[0].onmouseover = function() {mouseOver('gray','menu',0)};
+              menuIds[0].onmouseout = function() {mouseOut('rgba(255,255,255,.2)','menu',0)};
+              menuIds[1].onmouseover = function() {mouseOver('gray','menu',1)};
+              menuIds[1].onmouseout = function() {mouseOut('rgba(255,255,255,.2)','menu',1)};
+              menuIds[2].onmouseover = function() {mouseOver('gray','menu',2)};
+              menuIds[2].onmouseout = function() {mouseOut('rgba(255,255,255,.2)','menu',2)};
+              menuIds[3].onmouseover = function() {mouseOver('gray','menu',3)};
+              menuIds[3].onmouseout = function() {mouseOut('rgba(255,255,255,.2)','menu',3)};
 
 
 fOurT = false;
@@ -664,12 +463,4 @@ fOurT = false;
         }
       }
 
-  // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
-  // function typeWriter(elemento) {
-  //   const textoArray = elemento.innerHTML.split('');
-  //   elemento.innerHTML = '';
-  //   for(let i = 0; i < textoArray.length; i++) {
-  //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-  //   }
-  // }
 
