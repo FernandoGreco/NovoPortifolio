@@ -480,6 +480,10 @@ font-size: 12px;
  .scroll{
   overflow: scroll!important;
   }
+
+  .svgFundo{
+    display: none;
+  }
  .row.menor{
     width: 70%;
     margin-left: 15%;
