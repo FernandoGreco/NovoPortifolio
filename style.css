@@ -479,6 +479,7 @@ font-size: 12px;
 
  .scroll{
   overflow: scroll!important;
+  height: 100%;
   }
 
   .svgFundo{
