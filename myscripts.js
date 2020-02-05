@@ -193,11 +193,14 @@ var tituloProjeId = [];
   
     function luz(){
 
+
            //  var x = document.getElementById("inicio");
         if( fOurT === false){
            fOurT = true;
 
-          
+          //     let test =  document.getElementById("svgFundoPreto").style.display='inline-block';
+
+   //  console.log("teste id svg"+test);
 
          
 
