@@ -202,6 +202,11 @@ var tituloProjeId = [];
 
    //  console.log("teste id svg"+test);
 
+   
+
+   document.getElementById("svgFundoPreto").style.display = 'inherit';
+
+ 
          
 
            for (var i = 0; i < vetorFundoBranco.length; i++) {
