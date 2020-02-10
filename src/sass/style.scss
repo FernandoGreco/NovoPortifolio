@@ -3,12 +3,17 @@
     padding: 0;
   }
 
-.svgFundo,.svgFundoPreto{
+.svgFundo,.svgFundoPreto,.svgFundoContato{
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
+
+.svgFundoContato{
+  display:none;
+}
+
   body {
     z-index: 100;
    }

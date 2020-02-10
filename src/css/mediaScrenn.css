@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1000px) {
+  .tituloProjetos.git {
+    margin-top: 25px; }
+  .textoSobre {
+    font-size: 15px; }
+  .row.fundoSore, .row.fundoSoreCuros {
+    border: 0; }
+  .someEm1000 {
+    display: none; }
+  .btn-primary.projetosMenor {
+    display: inherit;
+    padding-bottom: 10px; } }
+
+@media only screen and (max-width: 800px) {
+  .txtContatos {
+    font-size: 25px; }
+  .some {
+    display: none; }
+  .tituloProjetos {
+    font-size: 18px;
+    margin-top: 10px; }
+  .textoSobre {
+    display: none; }
+  .formacao {
+    font-size: 14px;
+    margin-left: 15%;
+    width: 250px; }
+  .iconeSobre {
+    display: inherit;
+    margin: 35px 0px 0px 60px;
+    width: 150px; }
+  .letraSobre {
+    font-size: 20px; }
+  .nome {
+    width: 150px;
+    margin-left: 290%;
+    margin-top: -30px; } }
+
+@media only screen and (max-width: 600px) {
+  .links label:nth-child(2), .links label:nth-child(3), .links label:nth-child(4), .links label:nth-child(5) {
+    display: none; }
+  .orangeBox {
+    display: none; }
+  .links label:nth-child(1) {
+    display: block;
+    padding-left: 20px;
+    background-color: none; }
+  .links label {
+    background-color: black;
+    margin: 0px; }
+  .links label:hover:nth-child(1) {
+    background-color: none; }
+  .links label:hover:nth-child(2), .links label:hover:nth-child(3), .links label:hover:nth-child(4), .links label:hover:nth-child(5) {
+    background-color: gray; }
+  .links {
+    height: 50px;
+    width: 100%;
+    flex-direction: column;
+    z-index: 100; }
+  .rosto {
+    width: 100px;
+    margin-top: -20px; }
+  .txtContatos {
+    text-align: center;
+    font-size: 18px; }
+  .logosSVG {
+    margin: 10px;
+    display: block;
+    margin-left: 45%; }
+  .nome {
+    margin-top: 35px;
+    margin-left: 100px; }
+  .descricao {
+    max-width: 90%;
+    font-size: 20px; }
+  .formacao {
+    display: none; }
+  .formacaoMenor {
+    display: inherit;
+    position: absolute;
+    margin-top: 40%;
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px; }
+  .txtBotao {
+    display: none; }
+  .btn.sobre {
+    margin-bottom: -30px; } }
+
+@media only screen and (max-width: 575px) {
+  .scroll {
+    overflow: scroll !important;
+    height: 100%; }
+  .svgFundo, .svgFundoPreto {
+    display: none; }
+  .row.menor {
+    width: 70%;
+    margin-left: 15%; }
+  .btn-primary.projetosMenor {
+    width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  .row.menor {
+    width: 100%;
+    margin: 0%; }
+  .formacaoMenor {
+    margin-top: 53%; }
+  .btn.sobre {
+    padding: 5px; }
+  .btn {
+    width: 90px; } }
