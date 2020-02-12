@@ -1,21 +1,7 @@
-
-//verifica posição da página
-window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    console.log(scroll)
-});
-
-//chama função ao clicar em menu4
-document.getElementById("menus4").onclick = function() {myFunction()};
-
-function myFunction(){
-  console.log("menu 4 teste");
-  document.getElementById("svgFundo").style.display = 'none';
-  document.getElementById("svgFundoContato").style.display = 'inherit';
-}
 var div = document.getElementById('log');
 var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'alert ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','PHP, Mysql, JavaScript e CSS (Bootstrap)'];
 var txt2 = textos;
+
 
 function escrever(str, done) {
     var char = str.split('').reverse();
@@ -61,7 +47,6 @@ function rodape(conteudos, el) {
 rodape(textos);
 
 
-
 function menu(){
 
     var x = document.getElementById("menus");
@@ -95,6 +80,23 @@ function menu(){
     
     
     }
+
+
+//verifica posição da página
+window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    console.log(scroll)
+});
+
+//chama função ao clicar em menu4
+document.getElementById("menus4").onclick = function() {myFunction()};
+
+function myFunction(){
+  console.log("menu 4 teste");
+  document.getElementById("svgFundo").style.display = 'none';
+  document.getElementById("svgFundoContato").style.display = 'inherit';
+}
+
 
  
 
