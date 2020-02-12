@@ -1,4 +1,13 @@
 
+//chama função ao clicar em menu4
+document.getElementById("menus4").onclick = function() {myFunction()};
+
+function myFunction(){
+  console.log("menu 4 teste");
+  document.getElementById("svgFundo").style.display = 'none';
+  document.getElementById("svgFundoContato").style.display = 'inherit';
+}
+
 function menu(){
 
     var x = document.getElementById("menus");
