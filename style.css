@@ -3,17 +3,16 @@
     padding: 0;
   }
 
-.svgFundo,.svgFundoPreto,.svgFundoContato{
+.svgFundoPreto{
+  display: none;
+}
+
+.svgFundo,.svgFundoPreto{
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
-
-.svgFundoContato{
-  display:none;
-}
-
   body {
     z-index: 100;
    }
@@ -34,33 +33,16 @@
   z-index: 1;
 }
 .lua{
+  -webkit-transform: rotate(175deg);
+  -moz-transform: rotate(175deg);
+  -ms-transform: rotate(175deg);
+  -o-transform: rotate(175deg);
+  transform: rotate(175deg);
 width: 35px!important;
 fill:#2250a0!important;
 display: none;
 
 }
-
-@mixin transform($property) {
-  -webkit-transform: $property;
-  -ms-transform: $property;
-  -moz-transform:$property;
-  -o-transform: $property;
-  transform: $property;
-}
-
-@mixin transition($property) {
-  -webkit-transition: $property;
-  -ms-transition: $property;
-  -moz-transition: $property;
-  -o-transition: $property;
-  transition: $property;
-}
-
-
-.lua { @include transform(rotate(175deg)); }
-
-
-
   .orangeBox {
   color: #fff;
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -113,21 +95,18 @@ display: none;
   .links label:nth-child(1) {
   display: none;
 }
-
-%telaToda {
-    width: 100vw;
-    height: 100vh;
-}
  
   .bloco {
-   @extend %telaToda;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
   }
-
   #inicio{
     background-color: black;
+
+
   }
 
   .bloco.ruby{
@@ -146,8 +125,9 @@ display: none;
     z-index: 0;
   }
   .scroll{
-  @extend %telaToda;
     display: flex;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
   }   
   .scroll input{
@@ -174,21 +154,18 @@ transform: translateY(-50%);
    border-radius: 5px; 
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }  
-
-%rowCompartilhado {
+.row.fundoSore{
   height: 270px;
   background-color: gray;
   width: 93%;
   z-index: 1;
   margin-left: 3%;
 }
-
-.row.fundoSore{
-  @extend %rowCompartilhado;
-}
-
 .row.fundoSoreCuros{
-@extend %rowCompartilhado;
+  height: 270px;
+  background-color: gray;
+  width: 93%;
+  z-index: 1;
   border-radius: 10px;
     border-style: solid;
   border-color: #6E6E6E;
@@ -196,6 +173,7 @@ transform: translateY(-50%);
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
+  margin-left: 3%;
 }
 .descricao{
 
@@ -238,7 +216,7 @@ transform: translateY(-50%);
   .btn-primary.projetosMenor:hover{
     
     color: black;
-   background-color:  #A9A9A9;
+   background-color: 	#A9A9A9;
     border-color: gray;
   }
 
@@ -267,18 +245,21 @@ transform: translateY(-50%);
 .imgProjetos:hover{
   border-radius: 10px;
 box-shadow: 9px 5px 7px black;
+-webkit-transition: 0.7s ease-in;
+-moz-transition: 0.7s ease-in;
+-o-transition: 0.7s ease-in;
+-moz-transform: scale(1.01); 
+  -webkit-transform: scale(1.01); 
+  transform: scale(1.01); 
 }
-
-.imgProjetos:hover { @include transition(0.3s ease-in); }
-
-.imgProjetosGit:hover  { @include transition(2s ease-in); }
-
-.imgProjetos:hover { @include transform(scale(1.01)); }
-
-.imgProjetosGit:hover { @include transform(scale(1.2)); }
-
-.imgProjetos:hover { @include transform(0.7s ease-in); }
-
+.imgProjetosGit:hover{
+-webkit-transition: 2s ease-in;
+-moz-transition: 2s ease-in;
+-o-transition: 2s ease-in;
+-moz-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+}
 .descricao::after{
   color: black;
   content: '|';
@@ -344,5 +325,194 @@ box-shadow: 9px 5px 7px black;
    color: yellow;
  }
 
+@media only screen and (max-width: 1000px) {
 
-  @import "mediaScrenn";
+  .tituloProjetos.git{
+    margin-top: 25px;
+  }
+ .textoSobre{
+  font-size: 15px;
+}
+.row.fundoSore,.row.fundoSoreCuros{
+  border: 0;
+}
+
+
+  .someEm1000{
+  display: none;
+}
+
+.btn-primary.projetosMenor{
+    display: inherit;
+    padding-bottom: 10px;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+
+.txtContatos{
+ font-size: 25px;
+
+}
+
+
+  .some{
+  display: none;
+}
+.tituloProjetos{
+  font-size: 18px;
+  margin-top: 10px;
+
+}  
+.textoSobre{
+  display: none;
+}
+.formacao{
+ font-size: 14px;  margin-left:  15%;
+ width: 250px;
+}
+.iconeSobre{
+  display: inherit;
+  margin: 35px 0px 0px 60px;
+  width: 150px;
+
+
+}
+.letraSobre{
+  font-size: 20px;
+}
+.nome{
+  width: 150px;
+  margin-left:290%;
+  margin-top: -30px;
+}
+
+
+}
+@media only screen and (max-width: 600px) {
+
+.links label:nth-child(2),.links label:nth-child(3),.links label:nth-child(4),.links label:nth-child(5) {
+  display: none;
+}
+
+.orangeBox{
+  display: none;
+}
+ 
+.links label:nth-child(1){
+  display: block;
+ padding-left: 20px;
+ background-color: none;
+}
+
+.links label{
+    background-color: black;
+    margin: 0px;
+}
+
+ .links label:hover:nth-child(1){
+    background-color: none;
+  }
+
+   .links label:hover:nth-child(2),.links label:hover:nth-child(3),.links label:hover:nth-child(4),.links label:hover:nth-child(5) {
+    background-color: gray;
+  }
+.links{
+  height: 50px;
+  width: 100%;
+  flex-direction: column;
+  z-index: 100;
+
+}
+
+.rosto{
+
+  width:100px;
+  margin-top: -20px;
+}  
+
+.txtContatos{
+ text-align: center;
+ font-size: 18px;
+
+}
+
+.logosSVG{
+  margin: 10px;
+     display: block;
+     margin-left: 45%;
+
+}
+
+ 
+  .nome{
+ margin-top: 35px;
+ margin-left: 100px;
+ }
+.descricao{
+max-width: 90%;
+font-size: 20px;
+}
+
+.formacao{
+display: none;
+}
+.formacaoMenor{
+display: inherit;
+position: absolute;
+margin-top: 40%;
+background-color: white;
+width: 90%;
+padding: 5px;
+text-align: center;
+font-size: 12px;
+}
+.txtBotao{
+  display: none;
+}
+.btn.sobre{
+  margin-bottom:-30px;
+}
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+ .scroll{
+  overflow: scroll!important;
+  height: 100%;
+  }
+
+  .svgFundo{
+    display: none;
+  }
+ .row.menor{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+.btn-primary.projetosMenor{
+ width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.row.menor{
+    width: 100%;
+    margin:0%;
+  }
+
+.formacaoMenor{
+margin-top: 53%;
+}
+.btn.sobre{
+  padding: 5px;
+}
+.btn{
+  width: 90px;
+
+}
+}

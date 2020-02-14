@@ -45,20 +45,16 @@ function rodape(conteudos, el) {
 }
 
 rodape(textos);
-
 /*
 //chama função ao clicar em menu4
 document.getElementById("menus4").onclick || document.getElementById("menus").onclick = function() {fundo2()};
-
 function fundo2(){
   console.log("menu 4 teste");
   document.getElementById("svgFundo").style.display = 'none';
   document.getElementById("svgFundoContato").style.display = 'inherit';
 }
-
 //chama função ao clicar em menu4
 document.getElementById("menus2").onclick || document.getElementById("menus3").onclick = function() {fundoSimples()};
-
 function fundoSimples(){
   console.log("menu 5 teste");
   document.getElementById("svgFundo").style.display = 'inherit';
@@ -113,7 +109,6 @@ function menu(){
     
     }
 
-
  // list.getElementsByTagName("LI")[0].innerHTML = "Milk";
 
  var vetorTituloProjetos = ["tituloProjetos","tituloProjetos2","tituloProjetos3","tituloProjetos4",
@@ -152,9 +147,8 @@ var tituloProjeId = [];
                          }                                             
             
   
- var vetorBtnProjetos = ["btnProj","btnProj2","btnProj3","btnProj4","btnProj5"]; 
-
-    function corFundo(id,cor){
+ var vetorBtnProjetos = ["btnProj","btnProj2","btnProj3","btnProj4","btnProj5"];
+function corFundo(id,cor){
         document.getElementById(id).style.backgroundColor = cor;
     }
 
@@ -217,9 +211,7 @@ var tituloProjeId = [];
 
  
     var fOurT = false;
-  
-
-    function luz(){
+ function luz(){
 
 
            //  var x = document.getElementById("inicio");

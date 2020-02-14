@@ -8,9 +8,8 @@
   height: 100%;
   z-index: 0; }
 
-.svgFundo{
-  display: none;
-}
+.svgFundoContato {
+  display: none; }
 
 body {
   z-index: 100; }
@@ -269,8 +268,7 @@ label {
   margin: -10px 0px 0px 145px;
   z-index: 10;
   font-weight: bold;
-  text-shadow: -1px 0 black, 0 1px black,
- 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
   background-color: black;
   padding: 10px;

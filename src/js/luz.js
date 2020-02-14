@@ -1,7 +1,6 @@
+ function luz(){
 
-    function luz(){
 
-console.log("teste function luz");
            //  var x = document.getElementById("inicio");
         if( fOurT === false){
            fOurT = true;

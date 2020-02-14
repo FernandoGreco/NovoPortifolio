@@ -4,7 +4,7 @@ const del = require('del');
 var concat = require('gulp-concat');
 
 gulp.task('concat', function() {
-	    return gulp.src(['src/js/maqEscrever.js','src/js/menu.js','src/js/vetorIds.js','src/js/editCss.js','src/js/luz.js','src/js/myscripts.js'])
+	    return gulp.src(['src/js/maqEscrever.js','src/js/menu.js','src/js/vetorIds.js','src/js/editCss.js','src/js/luz.js'])
       .pipe(concat('all.js'))
       .pipe(gulp.dest('src/js'));
   });

@@ -1,4 +1,4 @@
-    function corFundo(id,cor){
+function corFundo(id,cor){
         document.getElementById(id).style.backgroundColor = cor;
     }
 
@@ -61,4 +61,3 @@
 
  
     var fOurT = false;
-  

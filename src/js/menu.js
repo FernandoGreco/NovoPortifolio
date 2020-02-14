@@ -1,16 +1,13 @@
 /*
 //chama função ao clicar em menu4
 document.getElementById("menus4").onclick || document.getElementById("menus").onclick = function() {fundo2()};
-
 function fundo2(){
   console.log("menu 4 teste");
   document.getElementById("svgFundo").style.display = 'none';
   document.getElementById("svgFundoContato").style.display = 'inherit';
 }
-
 //chama função ao clicar em menu4
 document.getElementById("menus2").onclick || document.getElementById("menus3").onclick = function() {fundoSimples()};
-
 function fundoSimples(){
   console.log("menu 5 teste");
   document.getElementById("svgFundo").style.display = 'inherit';
