@@ -1,4 +1,4 @@
-
+/*
 document.getElementById("menus2").onclick = function() {fundo2()};
 document.getElementById("menus3").onclick = function() {fundo2()};
 
@@ -10,7 +10,7 @@ function fundo2(){
   console.log("menu sobre teste");
   document.getElementById("svgFundo").style.display = 'inherit';
 }
-
+*/
 
 function menu(){
 
