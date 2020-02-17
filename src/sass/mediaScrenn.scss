@@ -158,8 +158,12 @@ font-size: 12px;
   height: 100%;
   }
 
-  .svgFundo,.svgFundoPreto{
+  .svgFundo,.svgFundoPreto,.svgFundoContato{
     display: none;
+  }
+
+  .svgFundoPreto{
+    display: none!important;
   }
  .row.menor{
     width: 70%;
