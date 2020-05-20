@@ -514,7 +514,7 @@ function line(particle, particle2) {
   let context = canvas.getContext('2d');
   let particles = [];
   let particleSize = 2;
-  let maxParticles = 40;
+  let maxParticles = 50;
   let threshold = 100;
   for (let i = 0; i < maxParticles; i++) {
     let particle = {
