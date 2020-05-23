@@ -1,5 +1,5 @@
 var div = document.getElementById('log');
-var textos = ['echo ("- Desenvolvimento de Sistemas Web");', 'alert ("- Layout Responsivo");', 'System.out.println ("-Front-End e Back-End [Júnior]");','PHP, Mysql, JavaScript e CSS (Bootstrap)'];
+var textos = ['Desenvolvimento de Sistemas', 'Layout Responsivo', 'Front-End e Back-End [Júnior]','PHP, Mysql, JavaScript e CSS','Bootstrap, SASS, Gulp, Angular 2+, Composer, Laravel, GIT, NPM'];
 var txt2 = textos;
 
 

@@ -6,7 +6,9 @@
   .tituloProjetos.git {
     margin-top: 25px; }
   .textoSobre {
-    font-size: 15px; }
+    font-size: 15px;
+    width: 300px;
+    margin-left: 170px; }
   .row.fundoSore, .row.fundoSoreCuros {
     border: 0; }
   .someEm1000 {

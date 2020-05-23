@@ -50,6 +50,6 @@ function line(particle, particle2) {
     particles.push(particle);
   }
   context.fillStyle = 'gray';
-  canvas.style.position = 'absolute';
+  canvas.style.position = 'fixed';
   animate();
   
