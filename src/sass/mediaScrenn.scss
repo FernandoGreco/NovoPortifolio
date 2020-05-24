@@ -74,6 +74,13 @@
 }
 @media only screen and (max-width: 600px) {
 
+  .imgProjetos{
+    margin-bottom: 20px;
+  } 
+  .bloco.projetos{
+height: 1770px;
+
+  }
 .links label:nth-child(2),.links label:nth-child(3),.links label:nth-child(4),.links label:nth-child(5) {
   display: none;
 }
@@ -163,6 +170,20 @@ font-size: 12px;
 
 @media only screen and (max-width: 575px) {
 
+  .bloco.sobre{
+    height: 570px;
+  }
+  .someEm1000{
+    display: inherit;
+  }
+  .objMobile{
+    display: block;
+    width: 100%;
+    color: gray;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px;
+  }
  .scroll{
   overflow: scroll!important;
   height: 100%;
@@ -183,6 +204,11 @@ font-size: 12px;
 .btn-primary.projetosMenor{
  width: 100%;
   }
+
+  .btn{
+    width: 90px;
+  
+  }
 }
 
 
@@ -196,11 +222,6 @@ font-size: 12px;
 .formacaoMenor{
 margin-top: 53%;
 }
-.btn.sobre{
-  padding: 5px;
-}
-.btn{
-  width: 90px;
 
-}
+
 }

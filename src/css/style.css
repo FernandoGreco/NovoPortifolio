@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+.objMobile {
+  display: none; }
+
 .svgFundo, .svgFundoPreto, .svgFundoContato {
   position: fixed;
   width: 100%;
@@ -357,6 +360,10 @@ label {
     margin-top: -30px; } }
 
 @media only screen and (max-width: 600px) {
+  .imgProjetos {
+    margin-bottom: 20px; }
+  .bloco.projetos {
+    height: 1770px; }
   .links label:nth-child(2), .links label:nth-child(3), .links label:nth-child(4), .links label:nth-child(5) {
     display: none; }
   .orangeBox {
@@ -411,6 +418,17 @@ label {
     margin-bottom: -30px; } }
 
 @media only screen and (max-width: 575px) {
+  .bloco.sobre {
+    height: 570px; }
+  .someEm1000 {
+    display: inherit; }
+  .objMobile {
+    display: block;
+    width: 100%;
+    color: gray;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px; }
   .scroll {
     overflow: scroll !important;
     height: 100%; }
@@ -422,15 +440,13 @@ label {
     width: 70%;
     margin-left: 15%; }
   .btn-primary.projetosMenor {
-    width: 100%; } }
+    width: 100%; }
+  .btn {
+    width: 90px; } }
 
 @media only screen and (max-width: 400px) {
   .row.menor {
     width: 100%;
     margin: 0%; }
   .formacaoMenor {
-    margin-top: 53%; }
-  .btn.sobre {
-    padding: 5px; }
-  .btn {
-    width: 90px; } }
+    margin-top: 53%; } }

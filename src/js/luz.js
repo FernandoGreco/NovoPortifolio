@@ -13,7 +13,10 @@
 
    document.getElementById("svgFundoPreto").style.display = 'inherit';
 
- 
+   
+   document.getElementById("objMobile").style.backgroundColor = 'white';
+   
+   document.getElementById("objMobile").style.color = 'black';           
          
 
            for (var i = 0; i < vetorFundoBranco.length; i++) {

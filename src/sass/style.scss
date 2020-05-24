@@ -3,6 +3,10 @@
     padding: 0;
   }
 
+.objMobile{
+  display: none;
+}  
+
 .svgFundo,.svgFundoPreto,.svgFundoContato{
   position: fixed;
   width: 100%;
@@ -259,6 +263,7 @@ transform: translateY(-50%);
 }
 .imgProjetos{
   border-radius: 10px;
+ 
 }
 
 .imgProjetos:hover{
