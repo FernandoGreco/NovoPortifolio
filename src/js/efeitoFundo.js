@@ -38,8 +38,8 @@ function line(particle, particle2) {
   let context = canvas.getContext('2d');
   let particles = [];
   let particleSize = 2;
-  let maxParticles = 50;
-  let threshold = 100;
+  let maxParticles = 40;
+  let threshold = 70;
   for (let i = 0; i < maxParticles; i++) {
     let particle = {
       x: Math.random() * canvas.width,
