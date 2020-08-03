@@ -133,7 +133,7 @@ display: none;
 
   .bloco.ruby{
     z-index: 2;
-    background-color: #2E2E2E;
+    background-color: black;
   }
 
   .bloco.projetos,button.btnProjetos{
@@ -143,7 +143,7 @@ display: none;
 
 
  #bootstrap{
-    background-color: gray;
+    background-color: black;
     z-index: 0;
   }
   .scroll{
@@ -178,7 +178,7 @@ transform: translateY(-50%);
 
 %rowCompartilhado {
   height: 270px;
-  background-color: gray;
+  background-color: black;
   width: 93%;
   z-index: 1;
   margin-left: 3%;

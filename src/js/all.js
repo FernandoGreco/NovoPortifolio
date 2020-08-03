@@ -370,12 +370,12 @@ function corFundo(id,cor){
             document.getElementById("lua").style.display = 'none';
             document.getElementById("luz").style.display = 'inherit';
             
-            document.getElementById("bootstrap").style.backgroundColor = 'gray';
-            document.getElementById("sobre").style.backgroundColor = 'gray';
-            document.getElementById("fundoCursos").style.backgroundColor = 'gray';
+            document.getElementById("bootstrap").style.backgroundColor = 'black';
+            document.getElementById("sobre").style.backgroundColor = 'black';
+            document.getElementById("fundoCursos").style.backgroundColor = 'black';
             document.getElementById("txtSobre").style.color = 'white';
         
-            document.getElementById("txtBtn").style.backgroundColor = 'gray';
+            document.getElementById("txtBtn").style.backgroundColor = 'black';
 
 
 
