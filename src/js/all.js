@@ -330,6 +330,8 @@ function corFundo(id,cor){
 
 
 
+            document.getElementById("sass").style.backgroundColor = 'white';
+
               menuIds[0].onmouseover = function() {mouseOver('#E0FFFF','menu',0)};
               menuIds[0].onmouseout = function() {mouseOut('white','menu',0)};
               menuIds[1].onmouseover = function() {mouseOver('#E0FFFF','menu',1)};
@@ -353,7 +355,7 @@ function corFundo(id,cor){
                              }  
                              
        
-            document.getElementById("sass").style.backgroundColor = 'gray';
+            document.getElementById("sass").style.backgroundColor = 'black';
 
             for (var i = 0; i < vetorMenu.length; i++) {
                 document.getElementById(vetorMenu[i]).style.backgroundColor = 'rgba(255,255,255,.2)';
@@ -392,7 +394,7 @@ for (var i = 0; i < vetorTxtBtn.length; i++) {
                            }
 
             for (var i = 0; i < vetorBtnProjetos.length; i++) {
-               corFundo( vetorBtnProjetos[i],"gray");
+               corFundo( vetorBtnProjetos[i],"black");
                            }
 
 
@@ -438,6 +440,7 @@ for (var i = 0; i < vetorTxtBtn.length; i++) {
                 this.style.color = "white";
             }
 
+            
 
             tituloProjeId[0].onmouseover = function() {mouseOver('#A9A9A9','tituloProjetosLua',0)};
             tituloProjeId[0].onmouseout = function() {mouseOut('#696969','tituloProjetosLua',0)};
