@@ -115,8 +115,6 @@
   .scroll {
     overflow: scroll !important;
     height: 100%; }
-  .svgFundo, .svgFundoPreto, .svgFundoContato {
-    display: none; }
   .svgFundoPreto {
     display: none !important; }
   .row.menor {
