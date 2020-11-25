@@ -1,0 +1,281 @@
+[33mcommit a53375ea2656f16ffe79045a9fbd65cee3dc21f8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Aug 9 20:00:38 2020 -0300
+
+    fundo mobile ok
+
+[33mcommit 3b7cb87003af4f59c902865ae532cf12fc0f8761[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Aug 9 19:40:08 2020 -0300
+
+    cor fundo ok
+
+[33mcommit 3a7bfee24b977fa77862b5e7ab249eab4c5ec112[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Aug 3 20:32:42 2020 -0300
+
+    alteração fundo
+
+[33mcommit dcdb2ee95dd940a1515bb345e61ffa028abb5d72[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Aug 3 17:53:16 2020 -0300
+
+    alteração cor fundo, change background
+
+[33mcommit 50a2f2564b250815a7288a3fb11416f270a58035[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Jul 2 20:45:11 2020 -0300
+
+    aleração layout inicio
+
+[33mcommit 9cf594c496bfd28a8bebc02f1e797294e0f86d27[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sat May 23 21:50:04 2020 -0300
+
+    mobile ok
+
+[33mcommit 32ce45d9d37e0362323de8d4fa0da8682ebf6432[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Fri May 22 23:00:58 2020 -0300
+
+    tela pc ok
+
+[33mcommit 9d0a0239fc2ab70ccdd9247b447b673fd8602b12[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu May 21 22:35:54 2020 -0300
+
+    fundo projetos
+
+[33mcommit 99a51bfbabe3d0ce859db27b4d3b00581fab8256[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed May 20 20:12:58 2020 -0300
+
+    efeito fundo display none -1250
+
+[33mcommit 54e5018be367f489e44cf5cda128840fe3233452[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed May 20 19:25:12 2020 -0300
+
+    alterações style
+
+[33mcommit 6b3bcd092d49a112337dd9684bfe62ebb5f52393[m[33m ([m[1;31morigin/gh-pages[m[33m)[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Tue May 19 22:03:48 2020 -0300
+
+    efeito fundo section sobre
+
+[33mcommit a588ea570d7f7634cf9bf0d88f04d68c4b0919f6[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Feb 16 21:43:28 2020 -0300
+
+    sem textura fundo no mobile
+
+[33mcommit 7a3730a7822899d9aef4b8400cb4cfd2c9e72e64[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Feb 16 13:01:22 2020 -0300
+
+    arrumando a luz
+
+[33mcommit 0016cb391ada8b1d5bb07aece5e82006556e9389[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Feb 16 10:46:03 2020 -0300
+
+    mudando sgv index
+
+[33mcommit b9e0e5439a4bd1a83853c8cf659e591446ba2b40[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Fri Feb 14 18:04:29 2020 -0300
+
+    falta arrumar fundo
+
+[33mcommit ac7f7e6fbb29005695f515a0bb949e1a4162b7d5[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 13 17:36:32 2020 -0300
+
+    aaafsdfds
+
+[33mcommit f5d391bba8106a1828295a63a3517800973333a7[m
+Merge: 0310236 d616ea4
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 13 17:29:34 2020 -0300
+
+    aaaa
+
+[33mcommit d616ea45a06953b381800dc66081664ac828d4dd[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 13 17:26:48 2020 -0300
+
+    style.css
+
+[33mcommit 670db0e3b4b53ea9c008be4349e6f5ff6dc89815[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 13 17:26:22 2020 -0300
+
+    scripts
+
+[33mcommit 0310236483c7840b5fd4f45255a31c3af8634414[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 13 17:16:38 2020 -0300
+
+    arrumando lua
+
+[33mcommit 14b878c882168f39a65ff5df0e471bce6a6b6e46[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed Feb 12 23:07:51 2020 -0300
+
+    alteração fundo
+
+[33mcommit 1950644267854593f1446da4a3ac89ae84079f73[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed Feb 12 08:37:20 2020 -0300
+
+    gulp concat aplicado
+
+[33mcommit 948965c6aeae5b0775a589562fab8586e9d6bfcc[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Tue Feb 11 22:31:35 2020 -0300
+
+    usando gulp concat em js
+
+[33mcommit d4fcec6c05981d0f353984585e882fcc925056e5[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Feb 10 18:30:40 2020 -0300
+
+    fundo contato alterado ao clicar
+
+[33mcommit 88a991a2ccf954cbb3a2cffbd4d4f013b7c86312[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Feb 10 11:16:46 2020 -0300
+
+    implementando sass
+
+[33mcommit dcf4ab6b606f84d47ecdedd30534d9ee3ff82f41[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 6 18:47:31 2020 -0300
+
+    usando gulp
+
+[33mcommit 86768f5aee5417e7ec3e4f3e65c08d9a84e163ba[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Feb 6 15:09:59 2020 -0300
+
+    fundo em pb
+
+[33mcommit 2b8701b037f545e2232b2b220a4eb85a73c0b45c[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed Feb 5 18:25:57 2020 -0300
+
+    mudança cores de fundo
+
+[33mcommit 4ab92ee0a1578511d154e4b147bcbbcc8e714194[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sat Feb 1 07:46:48 2020 -0300
+
+    altura mobile
+
+[33mcommit 6374d91b1d1710d17aa26d315ee8b2b0e733f33f[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Fri Jan 31 20:11:27 2020 -0300
+
+    tirar fundo em mobile
+
+[33mcommit fa7897ff47661669475d4324a7b732f21eaa59a6[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Jan 30 22:52:28 2020 -0300
+
+    scrool ativado para celulares
+
+[33mcommit ae284731f27d5e692d6e27667986d437ffce0fa2[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Jan 30 00:22:13 2020 -0300
+
+    fundo responsivo em svg
+
+[33mcommit aceb18ec6076df69520ad723d3b01551d988d277[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Thu Nov 21 22:52:32 2019 -0300
+
+    redução no js
+
+[33mcommit f37784a3d4f5d00aee2939e9b3daac8276426d7e[m
+Author: fernando <ocergfernando@gmail.com>
+Date:   Wed Oct 30 17:45:38 2019 -0300
+
+    arrumando btns sobre
+
+[33mcommit 346a18f0b66c96566530bf25538d83e6b0f8d68b[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Oct 28 11:38:11 2019 -0300
+
+    menos codigo js
+
+[33mcommit 5b1541884123c41d70f83d2c73836b2b347d5290[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Oct 27 22:58:43 2019 -0300
+
+    redução js, iniciar animacoes
+
+[33mcommit 92df793403d320592c771e5d4fad49094bce3a2a[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Oct 27 13:15:17 2019 -0300
+
+    diminuindo codigo js
+
+[33mcommit bc60adcbeebdb311efad0ae39a82a6fa64989084[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sat Oct 26 13:28:52 2019 -0300
+
+    menu cor ok
+
+[33mcommit e92b53db632a47d4de4dac4c88927122af45b9fe[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Fri Oct 25 11:56:34 2019 -0300
+
+    arrumando cor menu
+
+[33mcommit 701d39b0c35e1d2b4673bebe6e658f422e16482e[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Oct 21 11:41:00 2019 -0300
+
+    reduzindo myscripts.js
+
+[33mcommit ed1aeb8d93b4d98f04f9472514688256c229a770[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Sun Oct 20 00:53:05 2019 -0300
+
+    redução codigo js
+
+[33mcommit 309aa5a923e555653a1cd0742167ba93f6273a6b[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed Oct 16 23:49:53 2019 -0300
+
+    luz e som ok, falta detalhes
+
+[33mcommit 261328bd65c1981562866edbffb09f044777e388[m
+Author: fernando <ocergfernando@gmail.com>
+Date:   Wed Oct 16 17:52:58 2019 -0300
+
+    section projetos
+
+[33mcommit 2c9e55d18442f286a47cf96cc18ea82edd9255fc[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Wed Oct 16 12:48:42 2019 -0300
+
+    section sobre
+
+[33mcommit 2ad7f232b711dd9b7d683bc6a8466cd101bd4def[m
+Author: fernando <ocergfernando@gmail.com>
+Date:   Tue Oct 15 17:51:07 2019 -0300
+
+    alterando cores section sobre
+
+[33mcommit 12e4c863db1d9d4dee8ec9d9f61ac6d2be42d4c3[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Tue Oct 15 12:51:14 2019 -0300
+
+    cor menu
+
+[33mcommit 6ad5c84c8c4c974ac3806ce5cd51f7c2e8f611b1[m
+Author: Fernando Greco <greco-fernando@hotmail.com>
+Date:   Mon Oct 14 11:44:44 2019 -0300
+
