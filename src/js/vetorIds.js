@@ -13,8 +13,6 @@
 
  var vetorTxtBtn = ["txtBtn","txtBtn2","txtBtn3","txtBtn4"];
 
-
-
  var vetorBtnSobre = ["btnSobre", "btnSobre2","btnSobre3","btnSobre4"];
 
 
